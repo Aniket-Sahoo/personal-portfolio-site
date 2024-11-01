@@ -1,0 +1,42 @@
+{
+    "work": [
+        {
+            "title": "Creative Director",
+            "subtitle": "Miami, FL",
+            "date": "2011 - present",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+        },
+        {
+            "title": "Art Director",
+            "subtitle": "San Francisco, CA",
+            "date": "2010 - 2011",
+            "description": "Creative Direction, User Experience, Visual Design, SEO, Online Marketing"
+        },
+        {
+            "title": "Web Designer",
+            "subtitle": "Los Angeles, CA",
+            "date": "2008 - 2010",
+            "description": "User Experience, Visual Design"
+        },
+        {
+            "title": "Web Developer",
+            "subtitle": "San Francisco, CA",
+            "date": "2005 - 2008",
+            "description": "PHP, Laravel, WordPress"
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor of Computer Science",
+            "subtitle": "University of California, San Francisco",
+            "date": "2008 - 2011",
+            "description": "GPA: 3.23"
+        },
+        {
+            "title": "Master of Computer Science",
+            "subtitle": "University of California, San Francisco",
+            "date": "2006 - 2008",
+            "description": "GPA: 3.56"
+        }
+    ]
+}
