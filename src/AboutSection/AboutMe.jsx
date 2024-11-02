@@ -37,7 +37,7 @@ const AboutMe = () => {
   return (
     <>
       <Grid2 container flexGrow={1} border={1} justifyContent={"center"}>
-        <Grid2 container flexGrow={1} border={1} borderColor={'green'}  columns={{ xs: 6, sm: 12 }} p={1} spacing={3} maxWidth={"1300px"}>
+        <Grid2 container flexGrow={1} border={1} borderColor={'green'}  columns={{ xs: 6, sm: 12 }} p={1} spacing={3}>
           <Grid2 size={7} border={1} borderColor={"red"}>
             <AboutMeContent />
           </Grid2>

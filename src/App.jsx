@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import NavBar from './NavBar/NavBar'
 import NavBar2 from './NavBar/NavBar2'
 import NavBar3 from './NavBar/NavBar3'
-import AboutSection from './About/AboutSection'
+import AboutSection from './AboutSection/AboutSection'
+import ProjectsSection from './ProjectsSection/ProjectsSection'
 // import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       {/* <NavBar3 /> */}
       <AboutSection />
+      <ProjectsSection />
     </>
   )
 }
