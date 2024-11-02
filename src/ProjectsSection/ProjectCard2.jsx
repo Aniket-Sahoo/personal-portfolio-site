@@ -12,7 +12,7 @@ import ProjectTags from './ProjectTagsComponents';
 
 const ProjectCard = () => {
   return (
-    <Grid2 size={{xs: 9, sm: 6, md: 4, lg: 3}} direction={'column'} sx={{borderRadius: 5, bgcolor: '#a1887f'}}>
+    <Grid2 size={{xs: 9, sm: 6, md: 4, lg: 3}} sx={{borderRadius: 5, bgcolor: '#a1887f'}}>
       <Grid2 p={2} flex={1}>
         <CardMedia 
           sx={{ height: 175, borderRadius:2 }}
