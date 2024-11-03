@@ -1,5 +1,5 @@
 import { Box, Grid2 } from '@mui/material';
-import data from '../Data/about.json'
+import data from '../../Data/about.json'
 
 const ImagePlaceholder = () => (
   <Box
@@ -18,7 +18,6 @@ const ImagePlaceholder = () => (
 );
 
 const AboutMeContent = () => {
-  // Edit how you want to display the content
   return (
     <>
       <h1>{data.heading}</h1>
@@ -33,21 +32,19 @@ const AboutMeContent = () => {
   )
 }
 
-const AboutMe = () => {
+const AboutSection = () => {
   return (
-    <>
-      <Grid2 container flexGrow={1} justifyContent={"center"}>
-        <Grid2 container flexGrow={1} columns={{ xs: 6, sm: 12 }} spacing={3}>
-          <Grid2 size={7}>
-            <AboutMeContent />
-          </Grid2>
-          <Grid2 size="grow" container justifyContent={"center"}>
-            <ImagePlaceholder />
-          </Grid2>
+    <Grid2 container flexGrow={1} border={1} justifyContent={"center"}>
+      <Grid2 container flexGrow={1} border={1}  columns={{ xs: 6, sm: 12 }} p={1} spacing={3} maxWidth={"1300px"}>
+        <Grid2 size={7} border={1} borderColor={"red"}>
+          <AboutMeContent />
+        </Grid2>
+        <Grid2 size="grow" container border={1} borderColor={"blue"} justifyContent={"center"}>
+          <ImagePlaceholder />
         </Grid2>
       </Grid2>
-    </>
+    </Grid2>
   )
 }
 
-export default AboutMe;
+export default AboutSection;

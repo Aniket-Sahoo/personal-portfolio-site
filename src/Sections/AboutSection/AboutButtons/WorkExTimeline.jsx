@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
-import timelineData from '../../Data/timelineData.json';
+import timelineData from '../../../Data/timelineData.json';
 
 const WorkExTimeline = () => {
   let icons = [<WorkIcon />, <WorkIcon />, <WorkIcon />, <WorkIcon />];

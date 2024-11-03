@@ -1,6 +1,6 @@
 import { Box, Grid2 } from "@mui/material";
 import ContactIcons from "./ContactIcons";
-import contactInfo from "../Data/contactInfo.json"
+import contactInfo from "../../Data/contactInfo.json"
 import ContactCard from "./ContactCard";
 
 const ContactSection = () => {

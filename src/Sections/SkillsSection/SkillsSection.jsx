@@ -1,5 +1,5 @@
 import SkillsList from './SkillsList';
-import skills from '../Data/Skills.json';
+import skills from '../../Data/Skills.json';
 import { Box, Grid2 } from '@mui/material';
 
 const SkillsSection = () => {

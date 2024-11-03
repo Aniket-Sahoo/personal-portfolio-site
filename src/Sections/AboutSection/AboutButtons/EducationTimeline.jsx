@@ -1,7 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 import SchoolIcon from '@mui/icons-material/School';
-import timelineData from '../../Data/timelineData.json';
+import timelineData from '../../../Data/timelineData.json';
 
 const EducationTimeline = () => {
   // let icons = [<WorkIcon />, <WorkIcon />, <WorkIcon />, <WorkIcon />];
