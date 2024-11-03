@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Email",
+    "icon": "src/assets/contactLogos/GmailLogo.svg",
+    "hovericon": "src/assets/contactLogos/GmailHover.svg",
+    "link": "mailto:aniketsahoo379@gmail.com"
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "src/assets/contactLogos/LinkedInLogo.svg",
+    "hovericon": "src/assets/contactLogos/LinkedInHover.svg",
+    "link": "https://www.linkedin.com/in/sahoo-aniket/"
+  },
+  {
+    "name": "GitHub",
+    "icon": "src/assets/contactLogos/GithubLogo.svg",
+    "hovericon": "src/assets/contactLogos/GithubHover.svg",
+    "link": "https://github.com/Aniket-Sahoo"
+  }
+]

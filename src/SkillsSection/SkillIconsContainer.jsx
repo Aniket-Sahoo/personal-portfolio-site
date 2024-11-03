@@ -12,7 +12,6 @@ const SkillIcon = ({skill}) => {
     setIsHovered(false);
   };
 
-  console.log(skill.icon);
   return (
     <Tooltip title={skill.name} placement='top' arrow>
       <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
