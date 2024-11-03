@@ -17,7 +17,7 @@ const ContactIcon = ({contact}) => {
     <Tooltip title={contact.name} placement='top' arrow>
       <Link href={contact.link} target="_blank" rel="noopener noreferrer">
         <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <img src={isHovered ? contact.hovericon : contact.icon} alt={contact.name} width={50} height={50} />
+          <img src={isHovered ? contact.hovericon : contact.icon} alt={contact.name} width={45} height={45} />
         </IconButton>
       </Link>
     </Tooltip>
@@ -26,7 +26,7 @@ const ContactIcon = ({contact}) => {
 
 const ContactIcons = ({contactInfo}) => {
   return (
-    <Grid2>
+    <Grid2 container p={2} justifyContent={"center"} spacing={2}>
       {
         contactInfo.map((contact, index) => {
           return <ContactIcon key={index} contact={contact} />;

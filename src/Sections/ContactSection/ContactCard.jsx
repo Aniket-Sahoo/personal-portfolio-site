@@ -1,11 +1,15 @@
-import { Box, Grid2 } from "@mui/material"
+import { Box, Grid2, Link } from "@mui/material"
 import { shadows } from '@mui/system';
 
-
-const ContactCard = () => {
+background: 'linear-gradient(180deg, #686363 0%, #7F6868 40%, #202020 100%)'
+const ContactCard = ({email}) => {
   return (
-    <Grid2 sx={{flexGrow: 1, bgcolor: '#474747', borderRadius: 2, boxShadow: 4}}>
-      <h1>Contact Me</h1>
+    <Grid2 container bgcolor={"#171717"} justifyContent={"center"} py={3} borderRadius={2}>
+      <Link href={`mailto:${email}`} sx={{textDecoration: "none", color: "inherit"}}>
+        <Box component={"h1"}>
+          Keep in <Box component="span" color="primary.main"> touch </Box> ✉️
+        </Box>
+      </Link>
     </Grid2>
   )
 }
