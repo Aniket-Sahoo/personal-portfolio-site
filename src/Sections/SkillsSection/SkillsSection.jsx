@@ -1,4 +1,5 @@
 import SkillsList from './SkillsList';
+import SkillsList2 from './SkillsList2';
 import skills from '../../Data/Skills.json';
 import { Box, Grid2 } from '@mui/material';
 
@@ -9,7 +10,7 @@ const SkillsSection = () => {
         <Grid2 container justifyContent={{xs: "center", sm:"left"}}>
           <h1>Skills</h1>
         </Grid2>
-        <SkillsList skills={skills}/>
+        <SkillsList2 skills={skills}/>
       </Grid2>
     </section>
   )

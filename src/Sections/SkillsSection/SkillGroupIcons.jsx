@@ -23,7 +23,7 @@ const SkillIcon = ({skill}) => {
 
 const SkillGroupIcons = ({skillGroup}) => {
   return (
-    <Grid2 container border={1} spacing={3}>
+    <Grid2 container spacing={2}>
       {
         skillGroup.skills.map((skill, index) => {
           return skill.icon && <SkillIcon key={index} skill={skill} />;
