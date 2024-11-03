@@ -1,29 +1,20 @@
 import Typography from '@mui/material/Typography';
-import { Grid2, Box } from '@mui/material';
+import { Grid2, Button, Box } from '@mui/material';
 
-const Tags = () => {
+const ProjectTags = ({projectTags}) => {
   return (
-    <Grid2 container spacing={0.5} border={1}>
-      <Typography variant="body2" bgcolor={'#80d8ff'} color="text.secondary" p={0.75} borderRadius={2}>
-        Web Dev
-      </Typography>
-      <Typography variant="body2" bgcolor={'#80d8ff'} color="text.secondary" p={0.75} borderRadius={2}>
-        React
-      </Typography>
-      <Typography variant="body2" bgcolor={'#80d8ff'} color="text.secondary" p={0.75} borderRadius={2}>
-        Material UI
-      </Typography>
-      <Typography variant="body2" bgcolor={'#80d8ff'} color="text.secondary" p={0.75} borderRadius={2}>
-        React
-      </Typography>
-      <Typography variant="body2" bgcolor={'#80d8ff'} color="text.secondary" p={0.75} borderRadius={2}>
-        React
-      </Typography>
-      <Typography variant="body2" bgcolor={'#80d8ff'} color="text.secondary" p={0.75} borderRadius={2}>
-        React
-      </Typography>
+    <Grid2 container pt={1} spacing={0.5}>
+      {
+        projectTags.map((tag, index) => {
+          return (
+            <Button variant="outlined" size='small' sx={{color: tag.color, borderColor: tag.color, filter: "brightness(80%)"}} p={0.75} key={index}>
+              {tag.name}
+            </Button>
+          )
+        })
+      }
     </Grid2>
   )
 }
 
-export default Tags;
+export default ProjectTags;

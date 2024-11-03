@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Portfolio Site",
+    "description": "Created this site to display my projects and showcase my skills. Dive into my projects and discover who I am as a developer.",
+    "image": "https://picsum.photos/1000/600",
+    "link": "https://github.com/Aniket-Sahoo/Portfolio-Site",
+    "tags": [
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "Material UI", "color": "#007FFF" },
+      { "name": "JavaScript", "color": "#F7DF1E" },
+      { "name": "HTML", "color": "#E34F26" },
+      { "name": "CSS", "color": "#1572B6" }
+    ]
+  },
+  {
+    "title": "Car Price Predictor",
+    "description": "Predict the price of a car by its features using a machine learning model.",
+    "image": "https://picsum.photos/1000/600",
+    "link": "https://github.com/Aniket-Sahoo/Car-Price-Predictor",
+    "tags": [
+      { "name": "Python", "color": "#3776AB" },
+      { "name": "Scikit-learn", "color": "#F7931E" },
+      { "name": "Pandas", "color": "#150458" }
+    ]
+  },
+  {
+    "title": "Technical Analysis of Market Securities",
+    "description": "Analyzed historical data and simulated strategies by applying Technical Indicators",
+    "image": "https://picsum.photos/1000/600",
+    "link": "https://github.com/Aniket-Sahoo/Technical-Analysis-of-Market-Securities",
+    "tags": [
+      { "name": "Finance", "color": "#006340" },
+      { "name": "MS Excel", "color": "#21B573" }
+    ]
+  },
+  {
+    "title": "Game Theory in Baseball",
+    "description": "Created a game theory framework to assess optimal strategies in high-stakes baseball situations utilizing Statcast data",
+    "image": "https://picsum.photos/1000/600",
+    "link": "https://github.com/Aniket-Sahoo/Game-Theory-in-Baseball",
+    "tags": [
+      { "name": "Data Analysis", "color": "#2AB1AC" }
+    ]
+  },
+  {
+    "title": "Business Consulting",
+    "description": "Devised a go-to-market strategy for an NGO with 100K+ beneficiaries to integrate less privileged individuals into the gig economy and support poverty alleviation.",
+    "image": "https://picsum.photos/1000/600",
+    "link": "https://github.com/Aniket-Sahoo/Business-Consulting",
+    "tags": [
+      { "name": "Business Strategy", "color": "#DBCFB0" },
+      { "name": "GTM strategy", "color": "#718F94" }
+    ]
+  }
+]
