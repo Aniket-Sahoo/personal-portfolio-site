@@ -21,7 +21,7 @@ const SkillIcon = ({skill}) => {
   );
 };
 
-const SkillIconContainer = ({skillGroup}) => {
+const SkillGroupIcons = ({skillGroup}) => {
   return (
     <Grid2 container border={1} spacing={3}>
       {
@@ -33,4 +33,4 @@ const SkillIconContainer = ({skillGroup}) => {
   )
 }
 
-export default SkillIconContainer;
+export default SkillGroupIcons;

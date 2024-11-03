@@ -2,7 +2,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SkillIconsContainer from './SkillIconsContainer';
+import SkillIconsContainer from './SkillGroupIcons';
 import Box from '@mui/material/Box';
 
 const SkillsList = ({skills}) => {
