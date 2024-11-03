@@ -7,7 +7,7 @@ const ProjectTags2 = ({projectTags}) => {
       {
         projectTags.map((tag, index) => {
           return (
-            <Typography variant="body2" bgcolor={tag.color} sx={{filter: "brightness(80%)"}} color="text.secondary" p={0.75} borderRadius={2} key={index}>
+            <Typography variant="body2" bgcolor={tag.color} sx={{filter: "brightness(100%)"}} color="" p={0.75} borderRadius={2} key={index}>
               {tag.name}
             </Typography>
           )
