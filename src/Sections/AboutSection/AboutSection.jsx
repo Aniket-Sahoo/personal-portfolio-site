@@ -4,10 +4,10 @@ import AboutMe from './AboutMe';
 
 const AboutSection = () => {
   return (
-    <>
+    <Grid2 container direction={"column"} justifyItems={"center"} pt={"3rem"}>
       <AboutMe />
       <AboutButtons />
-    </>
+    </Grid2>
   )
 }
 
