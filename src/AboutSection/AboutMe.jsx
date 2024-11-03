@@ -36,12 +36,12 @@ const AboutMeContent = () => {
 const AboutMe = () => {
   return (
     <>
-      <Grid2 container flexGrow={1} border={1} justifyContent={"center"}>
-        <Grid2 container flexGrow={1} border={1} borderColor={'green'}  columns={{ xs: 6, sm: 12 }} p={1} spacing={3}>
-          <Grid2 size={7} border={1} borderColor={"red"}>
+      <Grid2 container flexGrow={1} justifyContent={"center"}>
+        <Grid2 container flexGrow={1} columns={{ xs: 6, sm: 12 }} p={1} spacing={3}>
+          <Grid2 size={7}>
             <AboutMeContent />
           </Grid2>
-          <Grid2 size="grow" container border={1} borderColor={"blue"} justifyContent={"center"}>
+          <Grid2 size="grow" container justifyContent={"center"}>
             <ImagePlaceholder />
           </Grid2>
         </Grid2>

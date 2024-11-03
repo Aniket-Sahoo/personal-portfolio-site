@@ -5,7 +5,7 @@ import ContactCard from "./ContactCard";
 
 const ContactSection = () => {
   return (
-    <Grid2 container alignItems={"center"} direction={"column"} border={1}>
+    <Grid2 container alignItems={"center"} direction={"column"}>
       <ContactCard/>
       <ContactIcons contactInfo={contactInfo}/>
     </Grid2>
