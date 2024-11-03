@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 
 const SkillsList = ({skills}) => {
   return (
-    <Box sx={{p: 2}} >
+    <Box sx={{}} >
       {
         skills.map((skillGroup, index) => (
           <Accordion key={index} sx={{bgcolor: '#a1887f'}}>
