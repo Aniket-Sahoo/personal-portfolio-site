@@ -16,5 +16,17 @@
     "icon": "src/assets/contactLogos/GithubLogo.svg",
     "hovericon": "src/assets/contactLogos/GithubHover.svg",
     "link": "https://github.com/Aniket-Sahoo"
+  },
+  {
+    "name": "LeetCode",
+    "icon": "src/assets/contactLogos/LeetCodeLogo.svg",
+    "hovericon": "src/assets/contactLogos/LeetCodeHover.svg",
+    "link": "https://leetcode.com/u/Killuathebeast89/"
+  },
+  {
+    "name": "Resume",
+    "icon": "src/assets/contactLogos/ResumeLogo.svg",
+    "hovericon": "src/assets/contactLogos/ResumeHover.svg",
+    "link": "src/assets/Resume.pdf"
   }
 ]
