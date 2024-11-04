@@ -11,7 +11,7 @@ import ProjectTags2 from './ProjectTagsComponent2';
 
 const ProjectCard2 = ({project}) => {
   return (
-    <Grid2 size={{ xs: 12, sm: 6, md: 6, lg: 4 }} sx={{ borderRadius: 5 }}>
+    <Grid2 size={{ xs: 12, sm: 6, md: 6, lg: 4}} sx={{ borderRadius: 5 }}>
       <Card 
         sx={{
           background: 'linear-gradient(180deg, #686363 0%, #7F6868 40%, #202020 100%)', // Gradient background
@@ -33,7 +33,7 @@ const ProjectCard2 = ({project}) => {
             {project.description}
           </Typography>
           <ProjectTags projectTags={project.tags}/>
-          <ProjectTags2 projectTags={project.tags}/>
+          {/* <ProjectTags2 projectTags={project.tags}/> */}
         </CardContent>
       </Card>
     </Grid2>
