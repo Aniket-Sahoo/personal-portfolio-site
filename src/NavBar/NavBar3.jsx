@@ -29,16 +29,25 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="sticky" color='transparent'>
+    <AppBar 
+      position="fixed" color='text.primary' 
+      sx={{
+        backgroundColor: "inherit",
+        filter: "contrast(105%)",
+        boxShadow: 0,
+        backdropFilter: "blur(5px)", // Apply blur effect to the background
+        WebkitBackdropFilter: "blur(10px)", // For Safari compatibility
+        borderRadius: 1,
+      }}
+    >
       <Container maxWidth="lg">
 
         {/* Toolbar display for small screens */}
-        <Toolbar sx={{ display: { xs: 'flex', md: 'none' }, justifyContent:"space-between", alignItems:"center"}}>
+        <Toolbar sx={{ display: { xs: 'flex', sm: 'none' }, justifyContent:"space-between", alignItems:"center"}}>
           <Grid2 container sx={{alignItems:"center", size:"auto", overflow:"hidden"}}>
             <AdbIcon />
             <Typography
               variant="h6"
-              // noWrap
               component="a"
               href="#app-bar-with-responsive-menu"
               sx={{
@@ -90,7 +99,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       
         {/* Toolbar display for large screens */}
-        <Toolbar sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:"space-between"}}>
+        <Toolbar sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent:"space-between"}}>
           <Grid2 border={1} container sx={{alignItems:"center", overflow:"hidden", border:"4px"}}>
             <AdbIcon />
             <Typography
