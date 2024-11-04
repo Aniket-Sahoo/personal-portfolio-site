@@ -41,7 +41,7 @@ const AboutButtons = () => {
 
   return (
     <>
-      <Grid2 container py={3} justifyContent={"center"} spacing={{ xs: 1, sm: 3, md: 5 }}>
+      <Grid2 container py={4} justifyContent={"center"} spacing={{ xs: 1, sm: 3, md: 5 }}>
         <Button 
           variant={state.work ? "contained" : "outlined"}
           color="primary"
@@ -73,7 +73,7 @@ const AboutButtons = () => {
           Hobbies
         </Button>
       </Grid2>
-      <Grid2 border={1}>
+      <Grid2>
         {state.work && <WorkExTimeline />}
         {state.education && <EducationTimeline />}
         {state.hobbies && <HobbiesComponent />}

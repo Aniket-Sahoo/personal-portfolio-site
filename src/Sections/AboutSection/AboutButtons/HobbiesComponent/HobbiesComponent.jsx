@@ -10,9 +10,10 @@ const HobbiesComponent = () => {
     <Grid2 container justifyContent={"center"}>
       <Grid2 
         container
-        py={3} px={4} bgcolor={"#333333"} borderRadius={3}
-        alignItems={"flex-start"} justifyContent={"flex-start"} 
-        spacing={3} 
+        py={3} px={{xs: 2, sm: 3, md: 5}} 
+        bgcolor={"#333333"} borderRadius={3}
+        alignContent={"center"} alignItems={"center"}
+        spacing={{xs: 1.5, sm: 3, md: 5}} 
       >
         {
           hobbies.map((hobby, index) => {
