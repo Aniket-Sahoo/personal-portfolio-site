@@ -23,7 +23,7 @@ const ProjectCard2 = ({project}) => {
           sx={{ height: 175, borderRadius: 2 }}
           image={project.image}
           title={project.title}
-          objectFit="cover"
+          objectfit="cover"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

@@ -1,16 +1,18 @@
 import { Box, Grid2 } from '@mui/material';
-import AboutButtons from './AboutButtons/AboutButtons';
 import AboutButtons2 from './AboutButtons/AboutButtons2';
-import AboutMe from './AboutMe';
+import AboutMe2 from './AboutMe2';
+import data from '../../Data/about.json'
 
 const AboutSection = () => {
   return (
-    <section id='about'>
-      <Grid2 container direction={"column"} justifyItems={"center"} pt={"3rem"}>
-        <AboutMe />
+      <Grid2 id='about'container direction={"column"} justifyItems={"center"} pt={"3rem"}>
+        <Box p={1} mb={1.5}>
+          <Box component={"h1"} my={1}>{data.heading}</Box>
+          <Box component={"q"}>{data.quote}</Box>
+        </Box>
+        <AboutMe2 aboutMeData={data}/>
         <AboutButtons2 />
       </Grid2>
-    </section>
   )
 }
 
