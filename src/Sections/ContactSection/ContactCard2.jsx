@@ -14,7 +14,7 @@ const ContactCard2 = ({ email }) => {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            touch
+            touch {" "}
           </Box> 
           ✉️
         </Box>
