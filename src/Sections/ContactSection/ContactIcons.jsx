@@ -1,4 +1,4 @@
-import { Grid2, Link } from "@mui/material";
+import { Grid2, Link, Box } from "@mui/material";
 import { useState } from "react";
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
@@ -17,7 +17,15 @@ const ContactIcon = ({contact}) => {
     <Tooltip title={contact.name} placement='top' arrow>
       <Link href={contact.link} target="_blank" rel="noopener noreferrer">
         <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <img src={isHovered ? contact.hovericon : contact.icon} alt={contact.name} width={45} height={45} />
+          <Box 
+            component="img" 
+            src={isHovered ? contact.hovericon : contact.icon} 
+            alt={contact.name} 
+            sx={{ 
+              width: { xs: 30, sm: 40, md: 45, lg: 50 },
+              height: { xs: 30, sm: 40, md: 45, lg: 50 },
+            }}
+          />
         </IconButton>
       </Link>
     </Tooltip>
