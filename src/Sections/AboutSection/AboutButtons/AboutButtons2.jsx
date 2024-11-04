@@ -4,6 +4,8 @@ import WorkExTimeline from './WorkExTimeline';
 import EducationTimeline from './EducationTimeline';
 import HobbiesComponent from './HobbiesComponent/HobbiesComponent';
 import TestComponent from './HobbiesComponent/TestComponent';
+import { motion, AnimatePresence } from 'framer-motion';
+
 
 const SET_WORK = "SET_WORK";
 const SET_EDUCATION = "SET_EDUCATION";
@@ -76,7 +78,18 @@ const AboutButtons = () => {
       <Grid2>
         {state.work && <WorkExTimeline />}
         {state.education && <EducationTimeline />}
-        {state.hobbies && <HobbiesComponent />}
+        <AnimatePresence>
+          {state.hobbies && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }} // Starting state
+              animate={{ opacity: 1, y: 0 }} // Animate to this state
+              exit={{ opacity: 0, y: -20 }} // Exit state
+              transition={{ duration: 0.3 }} // Duration of transition
+            >
+              <HobbiesComponent />
+            </motion.div>
+          )}
+      </AnimatePresence>
       </Grid2>
     </>
   );
