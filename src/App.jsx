@@ -8,6 +8,7 @@ import SkillsSection from './Sections/SkillsSection/SkillsSection'
 import ContactSection from './Sections/ContactSection/ContactSection'
 import { CssBaseline, Grid2, ThemeProvider } from '@mui/material'
 import theme from './customTheme';
+import FooterComponent from './Footer/FooterComponent'
 // import './App.css'
 
 function App() {
@@ -18,11 +19,12 @@ function App() {
       {/* <CssBaseline /> */}
       {/* <NavBar3 /> */}
       <Grid2 container justifyContent={"center"}>
-        <Grid2 container direction={"column"} maxWidth={"1450px"} sx={{px: {xs: "2rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "10rem", xxl: "12rem"}}} >
+        <Grid2 container direction={"column"} maxWidth={"1450px"} sx={{px: {xs: "1rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "10rem", xxl: "12rem"}}} >
           <AboutSection />
           <ProjectsSection />
           <SkillsSection />
           <ContactSection />
+          <FooterComponent />
         </Grid2>
       </Grid2>
     </ThemeProvider>

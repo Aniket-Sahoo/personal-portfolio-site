@@ -5,7 +5,7 @@ const ContactCard2 = ({ email }) => {
     <Grid2 container bgcolor={"#171717"} justifyContent={"center"} py={3} borderRadius={2}>
       <Link href={`mailto:${email}`} sx={{ textDecoration: "none", color: "inherit" }}>
         <Box component={"h1"}>
-          Keep in 
+          Keep in {" "}
           <Box
             component="span"
             sx={{
@@ -14,7 +14,7 @@ const ContactCard2 = ({ email }) => {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            {" "}touch
+            touch
           </Box> 
           ✉️
         </Box>
