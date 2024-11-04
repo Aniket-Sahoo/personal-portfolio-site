@@ -1,9 +1,9 @@
-import { Button, Grid, Grid2 } from '@mui/material';
+import { Button, Box, Grid2 } from '@mui/material';
 import { useReducer, useRef } from 'react';
 import WorkExTimeline from './WorkExTimeline';
 import EducationTimeline from './EducationTimeline';
-import HobbiesComponent from './HobbiesComponent';
-import SkillsSection from '../../SkillsSection/SkillsSection';
+import HobbiesComponent from './HobbiesComponent/HobbiesComponent';
+import TestComponent from './HobbiesComponent/TestComponent';
 
 const SET_WORK = "SET_WORK";
 const SET_EDUCATION = "SET_EDUCATION";
@@ -73,7 +73,7 @@ const AboutButtons = () => {
           Hobbies
         </Button>
       </Grid2>
-      <Grid2 container>
+      <Grid2 border={1}>
         {state.work && <WorkExTimeline />}
         {state.education && <EducationTimeline />}
         {state.hobbies && <HobbiesComponent />}
