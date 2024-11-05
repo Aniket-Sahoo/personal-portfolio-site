@@ -1,14 +1,23 @@
 {
     "heading": "About Me",
     "quote": "The way to get started is to quit talking and begin doing.",
-    "about": [
-        "Drive",
-        "Grit",
-        "Determination"
-    ],
-    "description": [
-        "I'm Aniket Sahoo,a full-stack developer. I graduated from BITS Pilani with a degree in Computer Science.",
-        "Passionate about the web and new technologies, I love learning and discovering new things. I also enjoy interface design and user experience. I like to create simple, intuitive interfaces that I can then develop further.",
-        "I'm currently seeking full-time opportunities and kickstarting my career"
+    "image": "src/assets/AboutMe.svg",
+    "sections" : [
+      {
+        "title": "A little about me.",
+        "description": "Hey! I'm Aniket Sahoo, a software engineer focused on building user-friendly, engaging applications. I have always been a dreamer, jumping from one idea to the next. My internship experiences helped me realize code as the tools to execute them. Since then, I've been honing my skills in web technologies and am excited to kick off my professional journey."
+      },
+      {
+        "title": "Who I want to be",
+        "description": "My goal is to build innovative tech products that are impactful and engaging. I would also love to contribute to the world of sports—my first and enduring passion."
+      },
+      {
+        "title": "Me in Three",
+        "description": "Determined. Dedicated. Passionate."
+      },
+      {
+        "title": "When I'm free",
+        "description": "I love mornings with a good book, playing basketball (7 national tournaments!), exploring other sports, and experimenting in the kitchen."
+      }
     ]
 }
