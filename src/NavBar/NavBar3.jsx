@@ -13,8 +13,14 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Grid2 } from '@mui/material';
+import Link from '@mui/material/Link';
 
-const pages = ['About', 'Skills', 'Projects'];
+const pages = [
+  {name:'About', href: '#about'}, 
+  {name:'Skills', href: '#skills'},
+  {name:'Projects', href: '#projects'}, 
+  // {name:'Contact', href: '#contact'}, 
+];
 
 function ResponsiveAppBar() {
   
@@ -41,28 +47,27 @@ function ResponsiveAppBar() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* Toolbar display for small screens */}
-        <Toolbar sx={{ display: { xs: 'flex', sm: 'none' }, justifyContent:"space-between", alignItems:"center"}}>
-          <Grid2 container sx={{alignItems:"center", size:"auto", overflow:"hidden"}}>
-            <AdbIcon />
-            <Typography
-              variant="h6"
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              LOGO
-            </Typography>
-          </Grid2>
-          <Box sx={{}}>
+        <Toolbar sx={{ display: { xs: 'flex', sm: 'none' }, justifyContent:"space-between", alignItems:"center", px:0}}>
+          <Link href="#" sx={{textDecoration: "none", color: "inherit"}}>
+            <Grid2 container sx={{alignItems:"center", size:"auto", overflow:"hidden"}}>
+                <AdbIcon />
+                <Typography
+                  variant="h6"
+                  sx={{
+                    mr: 2,
+                    fontFamily: 'monospace',
+                    fontWeight: 700,
+                    letterSpacing: '.3rem',
+                    color: 'inherit',
+                    textDecoration: 'none',
+                  }}
+                >
+                  LOGO
+                </Typography>
+            </Grid2>
+          </Link>
+          <Box>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -70,32 +75,41 @@ function ResponsiveAppBar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{px:1}}
             >
               <MenuIcon/>
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              <Menu
+                id="menu-appbar"
+                background-color="#171717"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={
+                  { display: { xs: 'block', md: 'none' },
+                  '& .MuiPaper-root': {  // This targets the Paper component directly
+                    backgroundColor: '#1976d2' // Change to your desired background color
+                  },
+                }}
+              >
+                {pages.map((page) => (
+                  <Link href={page.href} key={page.name} sx={{textDecoration: "none", color: "inherit"}}>
+                    <MenuItem  onClick={handleCloseNavMenu}>
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </MenuItem>
+                  </Link>
+                ))}
+              </Menu>
+            </Box>
         </Toolbar>
       
         {/* Toolbar display for large screens */}
@@ -122,13 +136,13 @@ function ResponsiveAppBar() {
           </Grid2>
           <Box sx={{display:"flex"}}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ mx: 2, color: 'inherit', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <Link href={page.href} key={page.name} sx={{textDecoration: "none", color: "inherit"}}>
+                <Button
+                  sx={{ mx: 2, color: 'inherit', display: 'block', alignContent:"center" }}
+                >
+                    {page.name} 
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
