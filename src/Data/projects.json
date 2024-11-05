@@ -2,7 +2,7 @@
   {
     "title": "Portfolio Site",
     "description": "Created this site to display my projects and showcase my skills. Dive into my projects and discover who I am as a developer.",
-    "image": "https://picsum.photos/1000/600",
+    "image": "src/assets/projectImages/TempPortfolioProjectImage.png",
     "link": "https://github.com/Aniket-Sahoo/Portfolio-Site",
     "tags": [
       { "name": "React", "color": "#61DAFB" },
@@ -15,7 +15,7 @@
   {
     "title": "Car Price Predictor",
     "description": "Predict the price of a car by its features using a machine learning model.",
-    "image": "https://picsum.photos/1000/600",
+    "image": "src/assets/projectImages/MLProjectImage2.png",
     "link": "https://github.com/Aniket-Sahoo/Car-Price-Predictor",
     "tags": [
       { "name": "Python", "color": "#3776AB" },
@@ -26,7 +26,7 @@
   {
     "title": "Technical Analysis of Market Securities",
     "description": "Analyzed historical data and simulated strategies by applying Technical Indicators",
-    "image": "https://picsum.photos/1000/600",
+    "image": "src/assets/projectImages/CandleStickImage.png",
     "link": "https://github.com/Aniket-Sahoo/Technical-Analysis-of-Market-Securities",
     "tags": [
       { "name": "Finance", "color": "#006340" },
@@ -36,7 +36,7 @@
   {
     "title": "Game Theory in Baseball",
     "description": "Created a game theory framework to assess optimal strategies in high-stakes baseball situations utilizing Statcast data",
-    "image": "https://picsum.photos/1000/600",
+    "image": "src/assets/projectImages/GTProjectImage4.png",
     "link": "https://github.com/Aniket-Sahoo/Game-Theory-in-Baseball",
     "tags": [
       { "name": "Data Analysis", "color": "#2AB1AC" }

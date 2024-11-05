@@ -19,7 +19,7 @@ const ProjectCard = ({project}) => {
     >
       <Grid2 px={2} pt={2} flex={1}>
         <CardMedia 
-          sx={{ height: 175, borderRadius:2 }}
+          sx={{ height: 175, borderRadius:2, filter:"brightness(85%) contrast(110%)" }}
           image={project.image}
           title={project.title}
           objectfit="cover"
