@@ -1,7 +1,7 @@
 // theme.js
 import { createTheme } from '@mui/material/styles';
 
-const theme = createTheme({
+const darkTheme = createTheme({
   // Custom breakpoints
   breakpoints: {
     values: {
@@ -16,6 +16,13 @@ const theme = createTheme({
   },
   // Custom color palette
   palette: {
+    background: {
+      default: '#242424',
+    },
+    text: {
+      primary: '#FFFFFF',
+      secondary: '#888888',
+    },
     primary: {
       main: '#4caf50', // Main color
       light: '#81c784',
@@ -26,14 +33,8 @@ const theme = createTheme({
       light: '#ffb74d',
       dark: '#f57c00',
     },
-    background: {
-      default: '#f4f6f8',
-    },
-    text: {
-      primary: '#333333',
-      secondary: '#888888',
-    },
   },
+
   // Custom typography
   typography: {
     fontFamily: 'Roboto, sans-serif',
@@ -66,4 +67,4 @@ const theme = createTheme({
   },
 });
 
-export default theme;
+export default darkTheme;

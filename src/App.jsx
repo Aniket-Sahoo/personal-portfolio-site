@@ -16,7 +16,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <CssBaseline /> */}
+      <CssBaseline />
       <NavBar3 />
       <HeroComponent />
       <Grid2 container justifyContent={"center"}>
