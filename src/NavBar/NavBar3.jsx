@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Grid2 } from '@mui/material';
 import Link from '@mui/material/Link';
+import Logo from '../assets/personalLogos/ASLogoCircle.png'
 
 const pages = [
   {name:'About', href: '#about'}, 
@@ -51,8 +52,8 @@ function ResponsiveAppBar() {
         <Toolbar sx={{ display: { xs: 'flex', sm: 'none' }, justifyContent:"space-between", alignItems:"center", px:0}}>
           <Link href="#" sx={{textDecoration: "none", color: "inherit"}}>
             <Grid2 container sx={{alignItems:"center", size:"auto", overflow:"hidden"}}>
-                <AdbIcon />
-                <Typography
+                <Box component={"img"} src={Logo} width={45} height={45}/>
+                {/* <Typography
                   variant="h6"
                   sx={{
                     mr: 2,
@@ -64,7 +65,7 @@ function ResponsiveAppBar() {
                   }}
                 >
                   LOGO
-                </Typography>
+                </Typography> */}
             </Grid2>
           </Link>
           <Box>
@@ -115,7 +116,8 @@ function ResponsiveAppBar() {
         {/* Toolbar display for large screens */}
         <Toolbar sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent:"space-between"}}>
           <Grid2 border={1} container sx={{alignItems:"center", overflow:"hidden", border:"4px"}}>
-            <AdbIcon />
+            <Box component={"img"} src={Logo} width={45} height={45}/>
+            {/* <AdbIcon />
             <Typography
               variant="h6"
               noWrap
@@ -132,7 +134,7 @@ function ResponsiveAppBar() {
               }}
             >
               LOGO
-            </Typography>
+            </Typography> */}
           </Grid2>
           <Box sx={{display:"flex"}}>
             {pages.map((page) => (
