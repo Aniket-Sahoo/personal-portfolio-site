@@ -8,7 +8,7 @@ const ProjectCardList = () => {
     <Grid2 container columns={{ xs: 12, l: 12 }} justifyContent={{xs: "center", sm:"left"}} spacing={{xs: 3}} borderColor={"blue"}>
       {projectList.map((project, index) => {
         return (
-          <ProjectCard2 key={index} project={project} />
+          <ProjectCard key={index} project={project} />
         )
       })}
     </Grid2>

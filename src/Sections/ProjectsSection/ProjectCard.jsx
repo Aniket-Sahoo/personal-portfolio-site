@@ -13,7 +13,10 @@ import ProjectTags2 from './ProjectTagsComponent2';
 
 const ProjectCard = ({project}) => {
   return (
-    <Grid2 size={{xs: 12, sm: 6, md: 6, lg: 4}} sx={{borderRadius: 5, bgcolor: '#a1887f'}}>
+    <Grid2 
+      size={{xs: 12, sm: 6, md: 6, lg: 4}} 
+      sx={{borderRadius: 5, bgcolor: '#a1887f', background: 'linear-gradient(180deg, #686363 0%, #7F6868 40%, #202020 100%)'}}
+    >
       <Grid2 px={2} pt={2} flex={1}>
         <CardMedia 
           sx={{ height: 175, borderRadius:2 }}
@@ -30,7 +33,7 @@ const ProjectCard = ({project}) => {
           {project.description}
         </Typography>
         <ProjectTags projectTags={project.tags}/>
-        <ProjectTags2 projectTags={project.tags}/>
+        {/* <ProjectTags2 projectTags={project.tags}/> */}
       </CardContent>
     </Grid2>
   );

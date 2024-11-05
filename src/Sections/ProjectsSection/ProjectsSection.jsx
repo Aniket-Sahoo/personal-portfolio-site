@@ -1,5 +1,4 @@
 import { Box, Grid2 } from '@mui/material'
-import ProjectCard2 from './ProjectCard'
 import ProjectCardList from './ProjectCardList'
 
 const ProjectsSection = () => { 
