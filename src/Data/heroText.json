@@ -1,0 +1,23 @@
+{
+  "normal": {
+    "greeting": "Hey there, I'm",
+    "name": "Aniket Sahoo",
+    "about": {
+      "role": "A Software Engineer, ", 
+      "tagline": "passionate about crafting innovative user-first experiences and solutions"
+    },
+    "anecdote1": {"emoji": "🔎", "text": "Seeking full-time opportunities to kickstart my career"},
+    "anecdote2": {"emoji": "🚀", "text": "Currently upskilling in React and frontend technologies"}
+  },
+
+  "small": {
+    "greeting": "Hey there, I'm",
+    "name": "Aniket Sahoo",
+    "about": {
+      "role": "A Software Engineer, ", 
+      "tagline": "passionate about crafting user-first solutions"
+    },
+    "anecdote1": {"emoji": "🔎", "text": "Seeking full-time opportunities"},
+    "anecdote2": {"emoji": "🚀", "text": "Upskilling in React and frontend tech"}
+  } 
+}

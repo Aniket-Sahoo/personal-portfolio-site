@@ -1,40 +1,48 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { Grid2, Box } from '@mui/material';
+import { Grid2, Box, Container } from '@mui/material';
+import heroText from '../Data/heroText.json';
+import { useTheme, useMediaQuery } from '@mui/material';
 
 const HeroText = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const content = isSmallScreen? heroText.small : heroText.normal;
   return (
-    <Box px={{xs: "1rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "10rem", xxl: "12rem"}}>
+    <Container px={{xs: "1rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "10rem", xxl: "12rem"}}>
       <Box>
         <Typography variant="h6" pb={0.5}>
-          Hey there! I'm
+          {content.greeting}
         </Typography>
         <Typography 
           variant="h1"
-          fontSize={{xs: "2.3rem", sm: "3rem", md: "3.5rem", lg: "4rem"}}
+          fontSize={{xs: "3rem", sm: "3rem", md: "3.5rem", lg: "4rem"}}
           sx={{
             background: 'linear-gradient(90deg, #FF5733, #FFC300)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}
         >  
-          ANIKET SAHOO.
+          {content.name}
         </Typography>
       </Box>
-      <Box py={3}>
-        <Typography variant="subtitle1">  
-          I love to solve problems and create beautiful interfaces. I am a full-stack developer with a passion for creating innovative solutions.
+      <Box py={3} pb={6}>
+        <Typography variant="subtitle1" color='text.secondary' fontSize={"1.3rem"}>  
+          <Box component={"span"} sx={{fontWeight: "bold", color: "text.primary"}}>
+            {content.about.role}
+          </Box>
+            {content.about.tagline}
         </Typography>
       </Box>
-      <Box>
+      <Box color={"text.secondary"}>
         <Typography variant="subtitle1">  
-          I'm currently seeking full-time opportunities and kickstarting my career
+          {content.anecdote1.emoji} {content.anecdote1.text}
         </Typography>
         <Typography variant="subtitle1">  
-          Check out my projects below
+          {content.anecdote2.emoji} {content.anecdote2.text}
         </Typography>
       </Box>
-    </Box>
+    </Container>
   );
 };
 
