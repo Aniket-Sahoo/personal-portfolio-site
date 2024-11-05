@@ -23,16 +23,16 @@ const darkTheme = createTheme({
       primary: '#FFFFFF',
       secondary: '#888888',
     },
-    primary: {
-      main: '#4caf50', // Main color
-      light: '#81c784',
-      dark: '#388e3c',
-    },
-    secondary: {
-      main: '#ff9800',
-      light: '#ffb74d',
-      dark: '#f57c00',
-    },
+    // primary: {
+    //   main: '#4caf50', // Main color
+    //   light: '#81c784',
+    //   dark: '#388e3c',
+    // },
+    // secondary: {
+    //   main: '#ff9800',
+    //   light: '#ffb74d',
+    //   dark: '#f57c00',
+    // },
   },
 
   // Custom typography

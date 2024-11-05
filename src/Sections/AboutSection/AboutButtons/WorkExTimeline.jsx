@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
@@ -14,15 +14,19 @@ const WorkExTimeline = () => {
               key={index}
               className="vertical-timeline-element--work"
               date={work.date}
-              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              icon= {icons[index]}
+              contentStyle={{ background: 'linear-gradient(90deg, #692828 0%,#69502B 50%, #692828 100%)', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '8px solid #692828'}}
+              iconStyle={{boxShadow:"1px 1px 5px 5px #565336", borderColor: '#565336', background: "linear-gradient(90deg, #692828 0%,#69502B 50%, #692828 100%)", color: '#fff' }}
+              icon = {icons[index]}
             >
               <h3 className="vertical-timeline-element-title">{work.title}</h3>
               <h4 className="vertical-timeline-element-subtitle">{work.subtitle}</h4>
               <p>
-                {work.description}
+                {work.description.map((description, index) => (
+                  <Box key={index}>
+                    {description}
+                  </Box>
+                ))}
               </p>
             </VerticalTimelineElement>
           )

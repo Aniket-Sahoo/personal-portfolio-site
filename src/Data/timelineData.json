@@ -1,42 +1,33 @@
 {
     "work": [
         {
-            "title": "Creative Director",
-            "subtitle": "Miami, FL",
-            "date": "2011 - present",
-            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+            "title": "SDE Intern",
+            "subtitle": "Amazon",
+            "date": "July 2023 - Dec 2023",
+            "icon": "src/assets/timelineLogos/amazonLogo.svg",
+            "description": [
+                "Backend, API development, Java, Springboot, Python, Junit5."
+            ]
         },
         {
-            "title": "Art Director",
-            "subtitle": "San Francisco, CA",
-            "date": "2010 - 2011",
-            "description": "Creative Direction, User Experience, Visual Design, SEO, Online Marketing"
-        },
-        {
-            "title": "Web Designer",
-            "subtitle": "Los Angeles, CA",
-            "date": "2008 - 2010",
-            "description": "User Experience, Visual Design"
-        },
-        {
-            "title": "Web Developer",
-            "subtitle": "San Francisco, CA",
-            "date": "2005 - 2008",
-            "description": "PHP, Laravel, WordPress"
+            "title": "SDE Intern",
+            "subtitle": "Scovelo Consulting",
+            "date": "May 2022 - July 2022",
+            "description": [
+                "Web-scraping, Automation, Selenium Webdriver, Python."
+            ]
         }
     ],
     "education": [
         {
-            "title": "Bachelor of Computer Science",
-            "subtitle": "University of California, San Francisco",
-            "date": "2008 - 2011",
-            "description": "GPA: 3.23"
-        },
-        {
-            "title": "Master of Computer Science",
-            "subtitle": "University of California, San Francisco",
-            "date": "2006 - 2008",
-            "description": "GPA: 3.56"
+            "title": "B.Eng in Computer Science",
+            "subtitle": "Birla Institute of Technology and Science, Goa",
+            "subtitle2": "BITS Goa",
+            "date": "2020 - 2024",
+            "description": [
+                "CGPA: 8.08/10",
+                "PORs: Consulting Club Director, Basketball Team Captain"
+            ]
         }
     ]
 }
