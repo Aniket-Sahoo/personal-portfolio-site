@@ -45,7 +45,7 @@
   {
     "title": "Business Consulting",
     "description": "Devised a go-to-market strategy for an NGO with 100K+ beneficiaries to integrate less privileged individuals into the gig economy and support poverty alleviation.",
-    "image": "https://picsum.photos/1000/600",
+    "image": "src/assets/projectImages/consultingStockImage3.jpg",
     "link": "https://github.com/Aniket-Sahoo/Business-Consulting",
     "tags": [
       { "name": "Business Strategy", "color": "#DBCFB0" },
