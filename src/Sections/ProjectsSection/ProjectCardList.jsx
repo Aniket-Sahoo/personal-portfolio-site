@@ -1,6 +1,5 @@
 import { Grid2 } from '@mui/material';
 import ProjectCard from './ProjectCard';
-import ProjectCard2 from './ProjectCard2';
 import projectList from '../../Data/projects.json';
 
 const ProjectCardList = () => {
