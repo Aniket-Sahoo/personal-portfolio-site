@@ -1,7 +1,8 @@
 // theme.js
+import { Zoom } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 
-const darkTheme = createTheme({
+const theme = createTheme({
   // Custom breakpoints
   breakpoints: {
     values: {
@@ -23,48 +24,50 @@ const darkTheme = createTheme({
       primary: '#FFFFFF',
       secondary: '#888888',
     },
-    // primary: {
-    //   main: '#4caf50', // Main color
-    //   light: '#81c784',
-    //   dark: '#388e3c',
-    // },
-    // secondary: {
-    //   main: '#ff9800',
-    //   light: '#ffb74d',
-    //   dark: '#f57c00',
-    // },
   },
-
   // Custom typography
   typography: {
     fontFamily: 'Roboto, sans-serif',
     h1: {
-      fontSize: '2.5rem',
-      fontWeight: 700,
+      fontSize: '2rem',
+      paddingBlockEnd: '1.5rem',
+      fontWeight: 600,
     },
     h2: {
       fontSize: '2rem',
       fontWeight: 600,
     },
-    body1: {
+    h3: {
+      fontSize: '1.2rem',
+      fontWeight: 600,
+    },
+    h4: {
       fontSize: '1rem',
+      fontWeight: 500,
+    },
+    h5: {
+      fontSize: '1rem',
+      fontWeight: 500,
+    },
+    p: {
+      fontSize: '0.8rem',
     },
     button: {
       textTransform: 'none',
     },
   },
-  // Custom spacing for padding/margin
-  spacing: 8, // Default base spacing unit
-  components: {
-    MuiContainer: {
-      styleOverrides: {
-        root: {
-          paddingLeft: '24px', // Custom padding for Container component
-          paddingRight: '24px',
-        },
-      },
-    },
-  },
+  // // Custom spacing for padding/margin
+  // spacing: 8, // Default base spacing unit
+  // components: {
+  //   MuiContainer: {
+  //     styleOverrides: {
+  //       root: {
+  //         paddingLeft: '24px', // Custom padding for Container component
+  //         paddingRight: '24px',
+  //       },
+  //     },
+  //   },
+  // },
 });
 
-export default darkTheme;
+export default theme;

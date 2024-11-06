@@ -26,7 +26,7 @@ const ProjectCard = ({project}) => {
         />
       </Grid2>
       <CardContent sx={{pt: 1}}>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h3">
           {project.title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1}}>

@@ -2,7 +2,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import SchoolIcon from '@mui/icons-material/School';
 import timelineData from '../../../Data/timelineData.json';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid2, Typography } from '@mui/material';
 
 const EducationTimeline = () => {
   // let icons = [<WorkIcon />, <WorkIcon />, <WorkIcon />, <WorkIcon />];
@@ -19,17 +19,17 @@ const EducationTimeline = () => {
               iconStyle={{ background: 'rgb(100, 50, 100)', color: '#fff' }}
               icon= {<SchoolIcon/>}
             >
-              <h3 className="vertical-timeline-element-title">{education.title}</h3>
-              <Typography component={"h4"} className="vertical-timeline-element-subtitle">
+              <Typography variant="h3" pb={1} className="vertical-timeline-element-title">{education.title}</Typography>
+              <Typography variant="h4" className="vertical-timeline-element-subtitle">
                 {education.subtitle}
               </Typography>
-              <p>
+              <Grid2 container direction={"column"} pt={2.5}>
                 {education.description.map((description, index) => (
-                  <Box key={index}>
+                  <Typography variant="p" key={index}>
                     {description}
-                  </Box>
+                  </Typography>
                 ))}
-              </p>
+              </Grid2>
             </VerticalTimelineElement>
           )
         )

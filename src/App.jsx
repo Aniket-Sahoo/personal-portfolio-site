@@ -11,7 +11,7 @@ import HeroComponent from './HeroComponent/HeroComponent'
 // import './App.css'
 
 function App() {
-
+  console.log(theme);
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

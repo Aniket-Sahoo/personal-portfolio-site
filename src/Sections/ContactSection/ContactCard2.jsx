@@ -1,10 +1,10 @@
-import { Grid2, Link, Box } from "@mui/material";
+import { Grid2, Link, Box, Typography } from "@mui/material";
 
 const ContactCard2 = ({ email }) => {
   return (
-    <Grid2 container bgcolor={"#171717"} justifyContent={"center"} py={3} borderRadius={2}>
+    <Grid2 container bgcolor={"#171717"} justifyItems={"center"} alignItems={"center"} justifyContent={"center"} py={3} borderRadius={2}>
       <Link href={`mailto:${email}`} sx={{ textDecoration: "none", color: "inherit" }}>
-        <Box component={"h1"}>
+        <Typography variant="h3" fontSize={"2rem"} my={2.5}>
           Keep in {" "}
           <Box
             component="span"
@@ -17,7 +17,7 @@ const ContactCard2 = ({ email }) => {
             touch {" "}
           </Box> 
           ✉️
-        </Box>
+        </Typography>
       </Link>
     </Grid2>
   );

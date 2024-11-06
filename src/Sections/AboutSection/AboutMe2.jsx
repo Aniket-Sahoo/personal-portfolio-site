@@ -1,4 +1,4 @@
-import { Box, Grid2, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Grid2, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 
 const ImagePlaceholder = () => {
@@ -35,8 +35,8 @@ const AboutMeContent = ({data}) => {
     <>
       {data.map((section, index) => (
         <Box key={index} pb={2.5}>
-          <Box component={"h3"} mt={0} mb={0.5}>{section.title}</Box>
-          <Box component={"p"} my={0} fontSize={"0.9rem"}>{section.description}</Box>
+          <Typography variant={"h3"} mt={0} mb={0.5}>{section.title}</Typography>
+          <Typography variant={"p"} my={0} fontSize={"0.9rem"}>{section.description}</Typography>
         </Box>
       ))}
     </>
