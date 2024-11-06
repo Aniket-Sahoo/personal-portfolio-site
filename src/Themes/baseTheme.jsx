@@ -25,6 +25,15 @@ const baseTheme = createTheme({
       secondary: '#888888',
     },
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '*': {
+          transition: 'padding 0.25s ease, margin 0.25s ease, font-size 0.25s ease, width 0.25s ease, height 0.25s ease',
+        },
+      },
+    },
+  },
   // Custom typography
   typography: {
     fontFamily: 'Roboto, sans-serif',

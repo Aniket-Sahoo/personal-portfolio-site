@@ -58,7 +58,7 @@ export const darkTheme = createTheme({
       tertiary: 'linear-gradient(180deg, #5F4A1C 0%, #846641 50%, #634646 100%)',
       card: 'linear-gradient(180deg, #686363 0%, #7F6868 40%, #202020 100%)',
       // secondary:
-    }
+    },
   },
 });
 

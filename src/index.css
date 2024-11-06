@@ -5,3 +5,7 @@
   background-color: #242424;
   scroll-behavior: smooth;
 }
+
+/* * {
+  transition: padding 0.25s ease, margin 0.25s ease, font-size 0.25s ease, width 0.25s ease, height 0.25s ease;
+} */

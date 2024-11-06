@@ -10,8 +10,7 @@ import HeroComponent from './HeroComponent/HeroComponent'
 import { lightTheme, darkTheme, darkTheme2 } from './Themes/customThemes';
 // import './App.css'
 
-function App() {
-  console.log(lightTheme);
+const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
