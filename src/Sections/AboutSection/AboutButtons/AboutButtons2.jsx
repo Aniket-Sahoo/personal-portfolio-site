@@ -58,15 +58,6 @@ const AboutButtons = () => {
         >
           Education
         </Button>
-        <a href="#skills" style={{ textDecoration: 'none' }}>
-          <Button 
-            variant={state.skills ? "contained" : "outlined"}
-            color='success' 
-            onClick={handleSkillsClick} // Use the new handleSkillsClick function
-          >
-            Skills
-          </Button>
-        </a>
         <Button 
           variant={state.hobbies ? "contained" : "outlined"}
           color='warning' 
