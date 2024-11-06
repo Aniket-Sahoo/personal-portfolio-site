@@ -7,7 +7,7 @@ import HobbiesIcon from './HobbiesIcon';
 
 const HobbiesComponent = () => {
   return (
-    <Grid2 container justifyContent={"center"}>
+    <Grid2 container pb={9} justifyContent={"center"}>
       <Grid2 
         container
         py={3} px={{xs: 2, sm: 3, md: 5}} 
