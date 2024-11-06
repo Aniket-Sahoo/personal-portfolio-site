@@ -42,7 +42,7 @@ const AboutButtons = () => {
   };
 
   return (
-    <>
+    <Box>
       <Grid2 container py={4} justifyContent={"center"} spacing={{ xs: 1, sm: 3, md: 5 }}>
         <Button 
           variant={state.work ? "contained" : "outlined"}
@@ -89,9 +89,9 @@ const AboutButtons = () => {
               <HobbiesComponent />
             </motion.div>
           )}
-      </AnimatePresence>
+        </AnimatePresence>
       </Grid2>
-    </>
+    </Box>
   );
 };
 
