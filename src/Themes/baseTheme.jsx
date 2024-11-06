@@ -64,6 +64,10 @@ const baseTheme = createTheme({
     button: {
       textTransform: 'none',
     },
+    icontag:{
+      fontSize: '0.7rem',
+      color: '#F2F3F4',
+    }
   }
 });
 
