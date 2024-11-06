@@ -3,7 +3,7 @@ import { Grid2, Button, Box } from '@mui/material';
 
 const ProjectTags = ({projectTags}) => {
   return (
-    <Grid2 container pt={1} spacing={0.5}>
+    <Grid2 container py={1} spacing={0.5}>
       {
         projectTags.map((tag, index) => {
           return (

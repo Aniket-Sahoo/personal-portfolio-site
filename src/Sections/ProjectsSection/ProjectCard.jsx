@@ -1,9 +1,34 @@
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Grid2, Box, useTheme } from '@mui/material';
+import { Grid2, Box, Link, useTheme } from '@mui/material';
 import ProjectTags from './ProjectTagsComponents';
+import { GitHub } from '@mui/icons-material';
 
+const LinkButtons = ({links}) => {
+  return (
+    <Grid2 container py={0.5} direction={"row"} spacing={1} alignContent={"center"}>
+    {
+      links.map((link, index) => {
+        return (
+          <Grid2 key={index} container>
+            <Link 
+              href={link.link} 
+              target="_blank" rel="noopener noreferrer" 
+              sx={{ textDecoration: "none", color: "inherit"}}>
+              <Box
+                component="img"
+                src={link.icon}
+                sx={{ width: 25, height: 25 }}
+              />
+            </Link>
+          </Grid2>
+        )
+      })
+    }
+    </Grid2> 
+  )
+}
 
 const ProjectCard = ({project}) => {
   const theme = useTheme();
@@ -20,15 +45,15 @@ const ProjectCard = ({project}) => {
           objectfit="cover"
         />
       </Grid2>
-      <CardContent>
+      <CardContent sx={{px: 2}}>
         <Typography gutterBottom variant="h3">
           {project.title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1}}>
           {project.description}
         </Typography>
+        <LinkButtons links={project.links}/>
         <ProjectTags projectTags={project.tags}/>
-        {/* <ProjectTags2 projectTags={project.tags}/> */}
       </CardContent>
     </Grid2>
   );

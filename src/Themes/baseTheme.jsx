@@ -1,6 +1,7 @@
 // theme.js
 import { Zoom } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
+import { col } from 'framer-motion/client';
 
 const baseTheme = createTheme({
   // Custom breakpoints
@@ -67,7 +68,7 @@ const baseTheme = createTheme({
     icontag:{
       fontSize: '0.7rem',
       color: '#F2F3F4',
-    }
+    },
   }
 });
 

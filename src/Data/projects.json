@@ -3,8 +3,19 @@
     "title": "Personal Portfolio Site",
     "description": "Created this site to display my projects and showcase my skills. Dive into my projects and discover who I am as a developer.",
     "image": "src/assets/projectImages/TempPortfolioProjectImage.png",
-    "link": "https://github.com/Aniket-Sahoo/Portfolio-Site",
-    "tags": [
+    "links":[
+      { 
+        "name": "Github", 
+        "link": "https://github.com/Aniket-Sahoo/personal-portfolio-site", 
+        "icon": "src/assets/contactLogos/GithubLogo.svg" 
+      },
+      { 
+        "name": "View Site", 
+        "link": "https://aniket-sahoo.netlify.app/", 
+        "icon": "src/assets/contactLogos/OpenNewTabLogo.svg" 
+      }
+    ],
+    "tags": [                                                                             
       { "name": "React", "color": "#61DAFB" },
       { "name": "Material UI", "color": "#007FFF" },
       { "name": "JavaScript", "color": "#F7DF1E" },
@@ -16,28 +27,46 @@
     "title": "Car Price Predictor",
     "description": "Predict the price of a car by its features using a machine learning model.",
     "image": "src/assets/projectImages/MLProjectImage2.png",
-    "link": "https://github.com/Aniket-Sahoo/Car-Price-Predictor",
+    "links":[
+      { 
+        "name": "Github", 
+        "link": "https://github.com/Aniket-Sahoo/Predicting_Used_Car_Prices", 
+        "icon": "src/assets/contactLogos/GithubLogo.svg" 
+      }
+    ],
     "tags": [
       { "name": "Python", "color": "#3776AB" },
-      { "name": "Scikit-learn", "color": "#F7931E" },
-      { "name": "Pandas", "color": "#150458" }
+      { "name": "Machine Learning", "color": "#E37F26" },
+      { "name": "Pandas", "color": "#A499BE" }
     ]
   },
   {
     "title": "Technical Analysis of Market Securities",
     "description": "Analyzed historical data and simulated strategies by applying Technical Indicators",
     "image": "src/assets/projectImages/CandleStickImage.png",
-    "link": "https://github.com/Aniket-Sahoo/Technical-Analysis-of-Market-Securities",
+    "links":[
+      { 
+        "name": "Github", 
+        "link": "https://github.com/Aniket-Sahoo", 
+        "icon": "src/assets/contactLogos/GithubLogo.svg" 
+      }
+    ],
     "tags": [
-      { "name": "Finance", "color": "#006340" },
-      { "name": "MS Excel", "color": "#21B573" }
+      { "name": "Finance", "color": "#91D513" },
+      { "name": "MS Excel", "color": "#08A150" }
     ]
   },
   {
     "title": "Game Theory in Baseball",
     "description": "Created a game theory framework to assess optimal strategies in high-stakes baseball situations utilizing Statcast data",
     "image": "src/assets/projectImages/GTProjectImage4.png",
-    "link": "https://github.com/Aniket-Sahoo/Game-Theory-in-Baseball",
+    "links":[
+      { 
+        "name": "View Project", 
+        "link": "https://docs.google.com/document/d/1o6Yy4Y-Gx3NVlAzhE-u5UdASzFzjJx5sU4JdGIt-cz4/edit?usp=sharing", 
+        "icon": "src/assets/contactLogos/OpenNewTabLogo.svg" 
+      }
+    ],
     "tags": [
       { "name": "Data Analysis", "color": "#2AB1AC" }
     ]
@@ -46,7 +75,8 @@
     "title": "Business Consulting",
     "description": "Devised a go-to-market strategy for an NGO with 100K+ beneficiaries to integrate less privileged individuals into the gig economy and support poverty alleviation.",
     "image": "src/assets/projectImages/consultingStockImage3.jpg",
-    "link": "https://github.com/Aniket-Sahoo/Business-Consulting",
+    "links":[
+    ],
     "tags": [
       { "name": "Business Strategy", "color": "#DBCFB0" },
       { "name": "GTM strategy", "color": "#718F94" }
