@@ -5,6 +5,9 @@
   background-color: #242424;
   scroll-behavior: smooth;
 }
+html {
+  scroll-padding-top: 2rem; /* Optional: Adjust the top padding when scrolling to target elements */
+}
 
 /* * {
   transition: padding 0.25s ease, margin 0.25s ease, font-size 0.25s ease, width 0.25s ease, height 0.25s ease;
