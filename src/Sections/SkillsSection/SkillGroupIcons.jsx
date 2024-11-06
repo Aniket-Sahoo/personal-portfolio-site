@@ -1,25 +1,7 @@
 import { IconButton, Tooltip, Grid2 } from '@mui/material';
 import AppsIcon from '@mui/icons-material/Apps';
 import { useState } from 'react';
-
-const SkillIcon = ({skill}) => {
-
-  const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  return (
-    <Tooltip title={skill.name} placement='top' arrow>
-      <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <img src={isHovered ? skill.hovericon : skill.icon} alt={skill.name} width={50} height={50} />
-      </IconButton>
-    </Tooltip>
-  );
-};
+import SkillIcon from './SkillIcon';
 
 const SkillGroupIcons = ({skillGroup}) => {
   return (
