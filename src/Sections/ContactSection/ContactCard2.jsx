@@ -4,7 +4,7 @@ const ContactCard2 = ({ email }) => {
   return (
     <Grid2 container bgcolor={"#171717"} justifyItems={"center"} alignItems={"center"} justifyContent={"center"} py={3} borderRadius={2}>
       <Link href={`mailto:${email}`} sx={{ textDecoration: "none", color: "inherit" }}>
-        <Typography variant="h3" fontSize={"2rem"} my={2.5}>
+        <Typography variant="h3" fontSize={{xs: "1.5rem", sm: "2rem"}}  my={{xs: 2, md: 2.5}}>
           Keep in {" "}
           <Box
             component="span"
