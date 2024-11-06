@@ -23,7 +23,7 @@ const pages = [
   // {name:'Contact', href: '#contact'}, 
 ];
 
-function ResponsiveAppBar() {
+function NavBar() {
   
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -53,19 +53,6 @@ function ResponsiveAppBar() {
           <Link href="#" sx={{textDecoration: "none", color: "inherit"}}>
             <Grid2 container sx={{alignItems:"center", size:"auto", overflow:"hidden"}}>
                 <Box component={"img"} src={Logo} width={45} height={45}/>
-                {/* <Typography
-                  variant="h6"
-                  sx={{
-                    mr: 2,
-                    fontFamily: 'monospace',
-                    fontWeight: 700,
-                    letterSpacing: '.3rem',
-                    color: 'inherit',
-                    textDecoration: 'none',
-                  }}
-                >
-                  LOGO
-                </Typography> */}
             </Grid2>
           </Link>
           <Box>
@@ -115,27 +102,11 @@ function ResponsiveAppBar() {
       
         {/* Toolbar display for large screens */}
         <Toolbar sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent:"space-between"}}>
-          <Grid2 border={1} container sx={{alignItems:"center", overflow:"hidden", border:"4px"}}>
-            <Box component={"img"} src={Logo} width={45} height={45}/>
-            {/* <AdbIcon />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              LOGO
-            </Typography> */}
-          </Grid2>
+          <Link href="#" sx={{textDecoration: "none", color: "inherit"}}>
+            <Grid2 border={1} container sx={{alignItems:"center", overflow:"hidden", border:"4px"}}>
+              <Box component={"img"} src={Logo} width={45} height={45}/>
+            </Grid2>
+          </Link>
           <Box sx={{display:"flex"}}>
             {pages.map((page) => (
               <Link href={page.href} key={page.name} sx={{textDecoration: "none", color: "inherit"}}>
@@ -153,4 +124,4 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default NavBar;
