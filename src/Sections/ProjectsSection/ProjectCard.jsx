@@ -19,7 +19,7 @@ const ProjectCard = ({project}) => {
           objectfit="cover"
         />
       </Grid2>
-      <CardContent sx={{pt: 1}}>
+      <CardContent>
         <Typography gutterBottom variant="h3">
           {project.title}
         </Typography>

@@ -55,19 +55,7 @@ const theme = createTheme({
     button: {
       textTransform: 'none',
     },
-  },
-  // // Custom spacing for padding/margin
-  // spacing: 8, // Default base spacing unit
-  // components: {
-  //   MuiContainer: {
-  //     styleOverrides: {
-  //       root: {
-  //         paddingLeft: '24px', // Custom padding for Container component
-  //         paddingRight: '24px',
-  //       },
-  //     },
-  //   },
-  // },
+  }
 });
 
 export default theme;
