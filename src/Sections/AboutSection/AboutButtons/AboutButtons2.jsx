@@ -1,4 +1,4 @@
-import { Button, Box, Grid2 } from '@mui/material';
+import { Button, Box, Grid2, useTheme } from '@mui/material';
 import { useReducer, useRef } from 'react';
 import WorkExTimeline from './WorkExTimeline';
 import EducationTimeline from './EducationTimeline';
@@ -34,6 +34,7 @@ const reducer = (state, action) => {
 const AboutButtons = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
+  const theme = useTheme();
 
   const handleSkillsClick = () => {
     dispatch({ type: SET_SKILLS });
@@ -46,21 +47,21 @@ const AboutButtons = () => {
       <Grid2 container py={4} justifyContent={"center"} spacing={{ xs: 1, sm: 3, md: 5 }}>
         <Button 
           variant={state.work ? "contained" : "outlined"}
-          color="primary"
+          color= {state.work ? 'brown' : "hazel"}
           onClick={() => dispatch({ type: SET_WORK })}
         >
           Work Experience
         </Button>
         <Button 
           variant={state.education ? "contained" : "outlined"}
-          color="secondary" 
+          color= {state.education ? 'blue' : "primary"}
           onClick={() => dispatch({ type: SET_EDUCATION })}
         >
           Education
         </Button>
         <Button 
           variant={state.hobbies ? "contained" : "outlined"}
-          color='warning' 
+          color= {state.hobbies ? 'green' : "success"}
           onClick={() => dispatch({ type: SET_HOBBIES })}
         >
           Hobbies

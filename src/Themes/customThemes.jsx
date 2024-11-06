@@ -40,9 +40,24 @@ export const darkTheme = createTheme({
     primary: {
       main: '#90caf9',
     },
-    secondary: {
-      main: '#f48fb1',
+    blue:{
+      main:"#1976d2",
     },
+    secondary: {
+      main: '#F0DFAD',
+    },
+    brown: {
+      main: '#8A3324',
+    },
+    hazel: {
+      main: '#E5AA70',
+    },
+    green:{
+      main:"#568203"
+    },
+    // warning:{
+    //   main:'#ed6C02',
+    // },
     background: {
       default: '#242424',
       paper: '#333333',

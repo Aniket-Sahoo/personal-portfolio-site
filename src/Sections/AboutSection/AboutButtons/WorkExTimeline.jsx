@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography, Grid2 } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
@@ -16,18 +16,18 @@ const WorkExTimeline = () => {
               date={work.date}
               contentStyle={{ background: 'linear-gradient(90deg, #692828 0%,#69502B 50%, #692828 100%)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '8px solid #692828'}}
-              iconStyle={{boxShadow:"1px 1px 5px 5px #565336", borderColor: '#565336', background: "linear-gradient(90deg, #692828 0%,#69502B 50%, #692828 100%)", color: '#fff' }}
+              iconStyle={{boxShadow:"0px 0px px 4px #ffffff", background: "linear-gradient(90deg, #692828 0%,#69502B 50%, #692828 100%)", color: '#fff'}}
               icon = {icons[index]}
             >
-              <h3 className="vertical-timeline-element-title">{work.title}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{work.subtitle}</h4>
-              <p>
+              <Typography variant="h3" pb={1} className="vertical-timeline-element-title">{work.title}</Typography>
+              <Typography variant="h4" className="vertical-timeline-element-subtitle">{work.subtitle}</Typography>
+              <Grid2 container direction={"column"} pt={2.5}>
                 {work.description.map((description, index) => (
-                  <Box key={index}>
+                  <Typography variant="p" fontSize={"0.9rem"} key={index}>
                     {description}
-                  </Box>
+                  </Typography>
                 ))}
-              </p>
+              </Grid2>
             </VerticalTimelineElement>
           )
         )
