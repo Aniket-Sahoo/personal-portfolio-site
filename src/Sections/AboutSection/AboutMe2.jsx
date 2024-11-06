@@ -48,7 +48,7 @@ const AboutMe2 = ({data}) => {
     <>
       <Grid2 container flexGrow={1}  justifyContent={"center"}>
         <Grid2 container flexGrow={1} flex={1} columns={{ xs: 6, md: 12 }} spacing={3}>
-          <Grid2 bgcolor={"#333333"} borderRadius={3} p={2.5} size={7} sx={{order: {xs: 2, md: 1}}}>
+          <Grid2 bgcolor={"background.paper"} borderRadius={3} p={2.5} size={7} sx={{order: {xs: 2, md: 1}}}>
             <AboutMeContent data={data.sections} />
           </Grid2>
           <Grid2 size="grow" container justifyContent={"center"} sx={{order: {xs: 1, md: 2}}}>

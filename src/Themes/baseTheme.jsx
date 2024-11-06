@@ -2,7 +2,7 @@
 import { Zoom } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 
-const theme = createTheme({
+const baseTheme = createTheme({
   // Custom breakpoints
   breakpoints: {
     values: {
@@ -58,4 +58,4 @@ const theme = createTheme({
   }
 });
 
-export default theme;
+export default baseTheme;

@@ -1,15 +1,16 @@
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Grid2, Box } from '@mui/material';
+import { Grid2, Box, useTheme } from '@mui/material';
 import ProjectTags from './ProjectTagsComponents';
 
 
 const ProjectCard = ({project}) => {
+  const theme = useTheme();
   return (
     <Grid2 
       size={{xs: 12, sm: 6, md: 6, lg: 4}} 
-      sx={{borderRadius: 5, bgcolor: '#a1887f', background: 'linear-gradient(180deg, #686363 0%, #7F6868 40%, #202020 100%)'}}
+      sx={{borderRadius: 5, bgcolor: '#a1887f', background: theme.palette.gradientBackground.card}}
     >
       <Grid2 px={2} pt={2} flex={1}>
         <CardMedia 

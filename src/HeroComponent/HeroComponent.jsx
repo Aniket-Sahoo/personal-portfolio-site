@@ -18,7 +18,7 @@ const HeroText = () => {
           variant="h1"
           fontSize={{xs: "3rem", sm: "3rem", md: "3.5rem", lg: "4rem"}}
           sx={{
-            background: 'linear-gradient(90deg, #FF5733, #FFC300)',
+            background: theme.palette.gradientBackground.primary,
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}

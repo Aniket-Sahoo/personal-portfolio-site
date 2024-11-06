@@ -5,15 +5,15 @@ import ProjectsSection from './Sections/ProjectsSection/ProjectsSection'
 import SkillsSection from './Sections/SkillsSection/SkillsSection'
 import ContactSection from './Sections/ContactSection/ContactSection'
 import { CssBaseline, Grid2, ThemeProvider } from '@mui/material'
-import theme from './customTheme';
 import FooterComponent from './Footer/FooterComponent'
 import HeroComponent from './HeroComponent/HeroComponent'
+import { lightTheme, darkTheme, darkTheme2 } from './Themes/customThemes';
 // import './App.css'
 
 function App() {
-  console.log(theme);
+  console.log(lightTheme);
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <NavBar3 />
       <HeroComponent />
