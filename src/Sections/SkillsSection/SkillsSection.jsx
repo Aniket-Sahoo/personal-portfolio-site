@@ -1,4 +1,3 @@
-import SkillsList from './SkillsList';
 import SkillsList2 from './SkillsList2';
 import skills from '../../Data/Skills.json';
 import { Box, Grid2, Typography } from '@mui/material';
