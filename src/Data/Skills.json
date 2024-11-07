@@ -166,8 +166,8 @@
         },
         {
           "name": "GitHub",
-          "icon": "assets/skillLogos/GitHubLogo.svg",
-          "hovericon": "assets/skillLogos/hoverLogos/GitHubHover.svg",
+          "icon": "assets/skillLogos/GithubLogo.svg",
+          "hovericon": "assets/skillLogos/hoverLogos/GithubHover.svg",
           "rating": "intermediate"
         },
         {
