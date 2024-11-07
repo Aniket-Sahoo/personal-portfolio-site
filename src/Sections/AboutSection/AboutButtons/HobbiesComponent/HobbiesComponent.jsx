@@ -1,8 +1,5 @@
 import { Grid2, Link, Box } from "@mui/material";
-import { useState } from "react";
-import hobbies from '../../../../data/hobbies.json';
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
+import hobbies from '../../../../Data/hobbies.json';
 import HobbiesIcon from './HobbiesIcon';
 
 const HobbiesComponent = () => {
