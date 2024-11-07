@@ -8,11 +8,6 @@
         "name": "Github", 
         "link": "https://github.com/Aniket-Sahoo/personal-portfolio-site", 
         "icon": "assets/contactLogos/GithubLogo.svg" 
-      },
-      { 
-        "name": "View Site", 
-        "link": "https://aniket-sahoo.netlify.app/", 
-        "icon": "assets/contactLogos/OpenNewTabLogo.svg" 
       }
     ],
     "tags": [                                                                             
