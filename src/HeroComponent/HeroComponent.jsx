@@ -64,7 +64,7 @@ const HeroComponentCenter = () => {
         fontSize="large" 
         sx={{
           color: "text.secondary",
-          animation: `${bounceAnimation} 3s ease-in-out infinite` 
+          animation: `${bounceAnimation} 2s ease-in-out infinite` 
         }}
       />
     </Grid2>
