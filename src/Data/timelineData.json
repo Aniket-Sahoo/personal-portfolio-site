@@ -1,8 +1,8 @@
 {
     "work": [
         {
-            "title": "SDE Intern",
-            "subtitle": "Amazon",
+            "title": "Amazon",
+            "subtitle": "SDE Intern",
             "date": "July 2023 - Dec 2023",
             "icon": "src/assets/timelineLogos/amazonLogo.svg",
             "description": [
@@ -10,8 +10,8 @@
             ]
         },
         {
-            "title": "SDE Intern",
-            "subtitle": "Scovelo Consulting",
+            "title": "Scovelo Consulting",
+            "subtitle": "SDE Intern",
             "date": "May 2022 - July 2022",
             "description": [
                 "Web-scraping, Automation, Selenium Webdriver, Python."
@@ -26,7 +26,21 @@
             "date": "2020 - 2024",
             "description": [
                 "CGPA: 8.08/10",
-                "PORs: Consulting Club Director, Basketball Team Captain"
+                " --- ",
+                "- Consulting Club Director", 
+                "- Basketball Team Captain"
+            ]
+        },
+        {
+            "title": "High School",
+            "subtitle": "Delhi Public School, Bangalore South",
+            "date": "2019 - 2020",  
+            "description": [
+                "XII: 96.4%",
+                "X: 95.6%",
+                " --- ",
+                "- School Sports Captain",
+                "- Basketball Team Captain "
             ]
         }
     ]
