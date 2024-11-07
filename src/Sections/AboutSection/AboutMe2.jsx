@@ -24,6 +24,12 @@ const ImagePlaceholder = () => {
             maxWidth: "400px",
             objectFit: 'cover', // Ensures the image fills the container
             borderRadius: 2,
+            filter: "grayscale(100%)",
+            transition: "filter 0.5s ease-in-out, transform 0.5s ease-in-out",
+            '&:hover': {
+              filter: "grayscale(0%)",
+              transform: 'scale(1.05)'
+            },
         }}
     />
   )
