@@ -1,5 +1,6 @@
 import { Tooltip, IconButton, Box, Link } from "@mui/material";
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const ContactIcon = ({contact}) => {
 
@@ -11,10 +12,15 @@ const ContactIcon = ({contact}) => {
     setIsHovered(false);
   };
 
+  const handleClick = () => {
+    // Track custom event when the link is clicked
+    Analytics.event('link_click', { label: contact.name });
+  };
+
   return (
     <Tooltip title={contact.name} placement="top" arrow>
       <Link href={contact.link} target="_blank" rel="noopener noreferrer">
-        <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
           <Box
             sx={{
               position: 'relative',
