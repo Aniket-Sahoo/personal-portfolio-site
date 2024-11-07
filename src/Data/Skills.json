@@ -4,20 +4,20 @@
       "skills": [
           {
             "name": "Java",
-            "icon": "src/assets/skillLogos/JavaLogo.svg",
-            "hovericon": "src/assets/skillLogos/hoverLogos/JavaHover.svg",
+            "icon": "assets/skillLogos/JavaLogo.svg",
+            "hovericon": "assets/skillLogos/hoverLogos/JavaHover.svg",
             "rating": "advanced"
           },
           {
               "name": "Python",
-              "icon": "src/assets/skillLogos/PythonLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/PythonHover.svg",
+              "icon": "assets/skillLogos/PythonLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/PythonHover.svg",
               "rating": "intermediate"
           },
           {
               "name": "JavaScript",
-              "icon": "src/assets/skillLogos/JSLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/JSHover.svg",
+              "icon": "assets/skillLogos/JSLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/JSHover.svg",
               "rating": "intermediate"
           }
       ]
@@ -27,38 +27,38 @@
       "skills": [
           {
               "name": "React",
-              "icon": "src/assets/skillLogos/ReactLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/ReactHover.svg",
+              "icon": "assets/skillLogos/ReactLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/ReactHover.svg",
               "rating": "intermediate"
           },
           {
             "name": "HTML",
-            "icon": "src/assets/skillLogos/HTMLLogo.svg",
-            "hovericon": "src/assets/skillLogos/hoverLogos/HTMLHover.svg",
+            "icon": "assets/skillLogos/HTMLLogo.svg",
+            "hovericon": "assets/skillLogos/hoverLogos/HTMLHover.svg",
             "rating": "intermediate"
           },
           {
               "name": "CSS",
-              "icon": "src/assets/skillLogos/CSSLogo.svg",
-              "hovericon":"src/assets/skillLogos/hoverLogos/CSSHover.svg",
+              "icon": "assets/skillLogos/CSSLogo.svg",
+              "hovericon":"assets/skillLogos/hoverLogos/CSSHover.svg",
               "rating": "intermediate"
           },
           {
               "name": "Material-UI",
-              "icon": "src/assets/skillLogos/MUILogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/MUIHover.svg",
+              "icon": "assets/skillLogos/MUILogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/MUIHover.svg",
               "rating": "intermediate"
           },
           {
               "name": "Bootstrap",
-              "icon": "src/assets/skillLogos/BootstrapLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/BootstrapHover.svg",
+              "icon": "assets/skillLogos/BootstrapLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/BootstrapHover.svg",
               "rating": "basic"
           },
           {
               "name": "Figma",
-              "icon": "src/assets/skillLogos/FigmaLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/FigmaHover.svg",
+              "icon": "assets/skillLogos/FigmaLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/FigmaHover.svg",
               "rating": "basic"
           }
       ]
@@ -68,26 +68,26 @@
       "skills": [
           {
               "name": "MongoDB",
-              "icon": "src/assets/skillLogos/MongoDBLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/MongoDBHover.svg",
+              "icon": "assets/skillLogos/MongoDBLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/MongoDBHover.svg",
               "rating": "intermediate"
           },
           {
               "name": "Spring",
-              "icon": "src/assets/skillLogos/SpringLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/SpringHover.svg",
+              "icon": "assets/skillLogos/SpringLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/SpringHover.svg",
               "rating": "basic"
           },
           {
               "name": "NodeJS",
-              "icon": "src/assets/skillLogos/NodeLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/NodeHover.svg",
+              "icon": "assets/skillLogos/NodeLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/NodeHover.svg",
               "rating": "basic"
           },
           {
               "name": "ExpressJS",
-              "icon": "src/assets/skillLogos/ExpressLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/ExpressHover.svg",
+              "icon": "assets/skillLogos/ExpressLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/ExpressHover.svg",
               "rating": "basic"
           }
       ]
@@ -97,26 +97,26 @@
       "skills": [
           {
               "name": "DSA",
-              "icon": "src/assets/skillLogos/DSALogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/DSAHover.svg",
+              "icon": "assets/skillLogos/DSALogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/DSAHover.svg",
               "rating": "advanced"
           },
           {
             "name": "OOP",
-            "icon": "src/assets/skillLogos/OOPSLogo.svg",
-            "hovericon": "src/assets/skillLogos/hoverLogos/OOPSHover.svg",
+            "icon": "assets/skillLogos/OOPSLogo.svg",
+            "hovericon": "assets/skillLogos/hoverLogos/OOPSHover.svg",
             "rating": "advanced"
           },
           {
             "name": "DBMS",
-            "icon": "src/assets/skillLogos/DBMSLogo.svg",
-            "hovericon": "src/assets/skillLogos/hoverLogos/DBMSHover.svg",
+            "icon": "assets/skillLogos/DBMSLogo.svg",
+            "hovericon": "assets/skillLogos/hoverLogos/DBMSHover.svg",
             "rating": "intermediate"
           },
           {
               "name": "OS",
-              "icon": "src/assets/skillLogos/OSLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/OSHover.svg",
+              "icon": "assets/skillLogos/OSLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/OSHover.svg",
               "rating": "basic"
           }
       ]
@@ -126,14 +126,14 @@
       "skills": [
           {
               "name": "SQL",
-              "icon": "src/assets/skillLogos/SQLLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/SQLHover.svg",
+              "icon": "assets/skillLogos/SQLLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/SQLHover.svg",
               "rating": "intermediate"
           },
           {
               "name": "Pandas",
-              "icon": "src/assets/skillLogos/PandasLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/PandasHover.svg",
+              "icon": "assets/skillLogos/PandasLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/PandasHover.svg",
               "rating": "basic"
           }
       ]
@@ -143,14 +143,14 @@
       "skills": [
           {
             "name": "Git",
-            "icon": "src/assets/skillLogos/GitLogo.svg",
-            "hovericon": "src/assets/skillLogos/hoverLogos/GitHover.svg",
+            "icon": "assets/skillLogos/GitLogo.svg",
+            "hovericon": "assets/skillLogos/hoverLogos/GitHover.svg",
             "rating": "advanced"
           },
           {
               "name": "Docker",
-              "icon": "src/assets/skillLogos/DockerLogo.svg",
-              "hovericon": "src/assets/skillLogos/hoverLogos/DockerHover.svg",
+              "icon": "assets/skillLogos/DockerLogo.svg",
+              "hovericon": "assets/skillLogos/hoverLogos/DockerHover.svg",
               "rating": "basic"
           }
       ]
@@ -160,20 +160,20 @@
       "skills": [
         {
           "name": "VSCode",
-          "icon": "src/assets/skillLogos/VSCodeLogo.svg",
-          "hovericon": "src/assets/skillLogos/hoverLogos/VSCodeHover.svg",
+          "icon": "assets/skillLogos/VSCodeLogo.svg",
+          "hovericon": "assets/skillLogos/hoverLogos/VSCodeHover.svg",
           "rating": "advanced"
         },
         {
           "name": "GitHub",
-          "icon": "src/assets/skillLogos/GitHubLogo.svg",
-          "hovericon": "src/assets/skillLogos/hoverLogos/GitHubHover.svg",
+          "icon": "assets/skillLogos/GitHubLogo.svg",
+          "hovericon": "assets/skillLogos/hoverLogos/GitHubHover.svg",
           "rating": "intermediate"
         },
         {
             "name": "Postman",
-            "icon": "src/assets/skillLogos/PostmanLogo.svg",
-            "hovericon": "src/assets/skillLogos/hoverLogos/PostmanHover.svg",
+            "icon": "assets/skillLogos/PostmanLogo.svg",
+            "hovericon": "assets/skillLogos/hoverLogos/PostmanHover.svg",
             "rating": "basic"
         }
       ]

@@ -1,32 +1,32 @@
 [
   {
     "name": "Email",
-    "icon": "src/assets/contactLogos/GmailLogo.svg",
-    "hovericon": "src/assets/contactLogos/GmailHover.svg",
+    "icon": "assets/contactLogos/GmailLogo.svg",
+    "hovericon": "assets/contactLogos/GmailHover.svg",
     "link": "mailto:aniketsahoo379@gmail.com"
   },
   {
     "name": "LinkedIn",
-    "icon": "src/assets/contactLogos/LinkedInLogo.svg",
-    "hovericon": "src/assets/contactLogos/LinkedInHover.svg",
+    "icon": "assets/contactLogos/LinkedInLogo.svg",
+    "hovericon": "assets/contactLogos/LinkedInHover.svg",
     "link": "https://www.linkedin.com/in/sahoo-aniket/"
   },
   {
     "name": "GitHub",
-    "icon": "src/assets/contactLogos/GithubLogo.svg",
-    "hovericon": "src/assets/contactLogos/GithubHover.svg",
+    "icon": "assets/contactLogos/GithubLogo.svg",
+    "hovericon": "assets/contactLogos/GithubHover.svg",
     "link": "https://github.com/Aniket-Sahoo"
   },
   {
     "name": "LeetCode",
-    "icon": "src/assets/contactLogos/LeetCodeLogo.svg",
-    "hovericon": "src/assets/contactLogos/LeetCodeHover.svg",
+    "icon": "assets/contactLogos/LeetCodeLogo.svg",
+    "hovericon": "assets/contactLogos/LeetCodeHover.svg",
     "link": "https://leetcode.com/u/Killuathebeast89/"
   },
   {
     "name": "Resume",
-    "icon": "src/assets/contactLogos/ResumeLogo.svg",
-    "hovericon": "src/assets/contactLogos/ResumeHover.svg",
-    "link": "src/assets/Resume.pdf"
+    "icon": "assets/contactLogos/ResumeLogo.svg",
+    "hovericon": "assets/contactLogos/ResumeHover.svg",
+    "link": "assets/Resume.pdf"
   }
 ]

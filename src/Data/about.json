@@ -1,7 +1,7 @@
 {
     "heading": "About Me",
     "quote": "The way to get started is to quit talking and begin doing.",
-    "image": "src/assets/myImages/Image1.jpeg",
+    "image": "assets/myImages/Image1.jpeg",
     "sections" : [
       {
         "title": "A little about me.",

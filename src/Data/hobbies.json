@@ -2,36 +2,26 @@
   {
     "name": "Basketball",
     "emoji": "🏀",
-    "image": "src/assets/hobbies/Basketball.svg",
-    "hoverimage": "src/assets/hobbies/BasketballHover.svg",
     "description": "I love to play basketball and I am a big fan of the game."
   },
   {
     "name": "Sports",
     "emoji": "⚽",
-    "image": "src/assets/hobbies/Sports.svg",
-    "hoverimage": "src/assets/hobbies/SportsHover.svg",
     "description": "I love to swim and I am a big fan of the sport."
   },
   {
     "name": "Reading",
     "emoji": "📖",
-    "image": "src/assets/hobbies/Reading.svg",
-    "hoverimage": "src/assets/hobbies/ReadingHover.svg",
     "description": "I love reading books and I am a big fan of thriller novels."
   },
   {
     "name": "Traveling",
     "emoji": "✈️",
-    "image": "src/assets/hobbies/Traveling.svg",
-    "hoverimage": "src/assets/hobbies/TravelingHover.svg",
     "description": "I love to travel and explore new places."
   },
   {
     "name": "Cooking",
     "emoji": "🥘",
-    "image": "src/assets/hobbies/Cooking.svg",
-    "hoverimage": "src/assets/hobbies/CookingHover.svg",
     "description": "I love to cook and make delicious food."
   }
 ]

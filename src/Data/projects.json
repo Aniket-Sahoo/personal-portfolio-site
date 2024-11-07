@@ -2,17 +2,17 @@
   {
     "title": "Personal Portfolio Site",
     "description": "Created this site to display my projects and showcase my skills. Dive into my projects and discover who I am as a developer.",
-    "image": "src/assets/projectImages/TempPortfolioProjectImage.png",
+    "image": "assets/projectImages/TempPortfolioProjectImage.png",
     "links":[
       { 
         "name": "Github", 
         "link": "https://github.com/Aniket-Sahoo/personal-portfolio-site", 
-        "icon": "src/assets/contactLogos/GithubLogo.svg" 
+        "icon": "assets/contactLogos/GithubLogo.svg" 
       },
       { 
         "name": "View Site", 
         "link": "https://aniket-sahoo.netlify.app/", 
-        "icon": "src/assets/contactLogos/OpenNewTabLogo.svg" 
+        "icon": "assets/contactLogos/OpenNewTabLogo.svg" 
       }
     ],
     "tags": [                                                                             
@@ -26,12 +26,12 @@
   {
     "title": "Car Price Predictor",
     "description": "Predict the price of a car by its features using a machine learning model.",
-    "image": "src/assets/projectImages/MLProjectImage2.png",
+    "image": "assets/projectImages/MLProjectImage2.png",
     "links":[
       { 
         "name": "Github", 
         "link": "https://github.com/Aniket-Sahoo/Predicting_Used_Car_Prices", 
-        "icon": "src/assets/contactLogos/GithubLogo.svg" 
+        "icon": "assets/contactLogos/GithubLogo.svg" 
       }
     ],
     "tags": [
@@ -43,12 +43,12 @@
   {
     "title": "Technical Analysis of Market Securities",
     "description": "Analyzed historical data and simulated strategies by applying Technical Indicators",
-    "image": "src/assets/projectImages/CandleStickImage.png",
+    "image": "assets/projectImages/CandleStickImage.png",
     "links":[
       { 
         "name": "Github", 
         "link": "https://github.com/Aniket-Sahoo", 
-        "icon": "src/assets/contactLogos/GithubLogo.svg" 
+        "icon": "assets/contactLogos/GithubLogo.svg" 
       }
     ],
     "tags": [
@@ -59,12 +59,12 @@
   {
     "title": "Game Theory in Baseball",
     "description": "Created a game theory framework to assess optimal strategies in high-stakes baseball situations utilizing Statcast data",
-    "image": "src/assets/projectImages/GTProjectImage4.png",
+    "image": "assets/projectImages/GTProjectImage4.png",
     "links":[
       { 
         "name": "View Project", 
         "link": "https://docs.google.com/document/d/1o6Yy4Y-Gx3NVlAzhE-u5UdASzFzjJx5sU4JdGIt-cz4/edit?usp=sharing", 
-        "icon": "src/assets/contactLogos/OpenNewTabLogo.svg" 
+        "icon": "assets/contactLogos/OpenNewTabLogo.svg" 
       }
     ],
     "tags": [
@@ -74,7 +74,7 @@
   {
     "title": "Business Consulting",
     "description": "Devised a go-to-market strategy for an NGO with 100K+ beneficiaries to integrate less privileged individuals into the gig economy and support poverty alleviation.",
-    "image": "src/assets/projectImages/consultingStockImage3.jpg",
+    "image": "assets/projectImages/consultingStockImage3.jpg",
     "links":[
     ],
     "tags": [

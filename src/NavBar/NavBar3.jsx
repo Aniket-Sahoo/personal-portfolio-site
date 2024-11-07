@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Grid2 } from '@mui/material';
 import Link from '@mui/material/Link';
-import Logo from '../assets/personalLogos/ASLogoCircle.png'
+import Logo from '/test.svg'
 
 const pages = [
   {name:'About', href: '#about'}, 
