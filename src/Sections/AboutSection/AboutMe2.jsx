@@ -1,7 +1,7 @@
 import { Box, Grid2, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 
-const ImagePlaceholder = () => {
+const ImagePlaceholder = ({image}) => {
   // const theme = useTheme();
   // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   // const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
@@ -15,13 +15,13 @@ const ImagePlaceholder = () => {
   return (
     <Box
         component="img"
-        src="https://picsum.photos/800/1000" // 4:5 aspect ratio placeholder image
+        src={image} // 4:5 aspect ratio placeholder image
         alt="Placeholder"
         sx={{
             width: '100%',
             height: 'auto',
-            maxHeight: "500px",
-            maxWidth: "400px",
+            maxHeight: {xs: "300px", sm: "300px", md: "600px"},
+            maxWidth: {xs: "400px", sm: "350px", md: "500px"},
             objectFit: 'cover', // Ensures the image fills the container
             borderRadius: 2,
             filter: "grayscale(100%)",
@@ -58,7 +58,7 @@ const AboutMe2 = ({data}) => {
             <AboutMeContent data={data.sections} />
           </Grid2>
           <Grid2 size="grow" container justifyContent={"center"} sx={{order: {xs: 1, md: 2}}}>
-            <ImagePlaceholder />
+            <ImagePlaceholder image={data.image} />
           </Grid2>
         </Grid2>
       </Grid2>
