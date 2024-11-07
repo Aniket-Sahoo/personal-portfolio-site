@@ -3,13 +3,23 @@ import Typography from '@mui/material/Typography';
 import { Grid2, Box, Container } from '@mui/material';
 import heroText from '../Data/heroText.json';
 import { useTheme, useMediaQuery } from '@mui/material';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { keyframes } from '@mui/system';
+
+const bounceAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }`;
 
 const HeroText = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const content = isSmallScreen? heroText.small : heroText.normal;
   return (
-    <Container sx={{px:{xs: "1rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "9rem", xxl: "12rem"}}}>
+    <Container sx={{px:{xs: "1rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "9rem", xxl: "12rem"}, py: {xs: "9rem", sm: "9rem"}}}>
       <Box>
         <Typography variant="h6" pb={0.5}>
           {content.greeting}
@@ -48,8 +58,15 @@ const HeroText = () => {
 
 const HeroComponentCenter = () => {
   return (
-    <Grid2 container height={"100vh"} alignItems={"center"} justifyContent={"center"}>
+    <Grid2 container direction={"column"} height={"100vh"} alignItems={"center"} justifyContent={"center"}>
       <HeroText />
+      <ArrowDownwardIcon 
+        fontSize="large" 
+        sx={{
+          color: "text.secondary",
+          animation: `${bounceAnimation} 3s ease-in-out infinite` 
+        }}
+      />
     </Grid2>
   );
 };
