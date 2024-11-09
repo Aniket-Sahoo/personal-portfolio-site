@@ -19,5 +19,28 @@
     },
     "anecdote1": {"emoji": "🔎", "text": "Seeking full-time opportunities"},
     "anecdote2": {"emoji": "🚀", "text": "Upskilling in React and frontend tech"}
-  } 
+  }, 
+
+  "contactInfo": [
+    {
+      "name": "Github",
+      "link": "https://github.com/Aniket-Sahoo",
+      "icon": "assets/contactLogos/GithubLogo.svg"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/sahoo-aniket/",
+      "icon": "assets/contactLogos/LinkedInLogo.svg"
+    },
+    {
+      "name": "Email",
+      "link": "mailto:aniketsahoo379@gmail.com",
+      "icon": "assets/contactLogos/GmailLogo.svg"
+    },
+    {
+      "name": "Resume",
+      "link": "assets/Resume.pdf",
+      "icon": "assets/contactLogos/ResumeLogo.svg"
+    }
+  ]
 }
