@@ -5,7 +5,7 @@ import data from '../../Data/about.json'
 
 const AboutSection = () => {
   return (
-      <Grid2 id='about' pt={6}>
+      <Grid2 id='about' pt={"5rem"}>
         <Grid2 container direction={"column"} mb={2.5} alignItems={{xs: "center", sm:"flex-start"}}>
           <Typography variant={"h1"} pb={0.5} pt={0}>{data.heading}</Typography>
           <Box component={"q"}>{data.quote}</Box>
