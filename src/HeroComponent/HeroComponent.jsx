@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { Grid2, Box, Container, Button } from '@mui/material';
 import heroContent from '../Data/heroContent.json';
@@ -54,25 +54,32 @@ const HeroText = () => {
           {textContent.anecdote2.emoji}&nbsp; {textContent.anecdote2.text}
         </Typography>
       </Box>
-      {/* <HeroButtons /> */}
     </>
   );
 };
 
 const HeroButtons = () => {
+
   const contactInfo = heroContent.contactInfo;
+
   const handleClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   }
+
+
   return(
     <Box py={6}>
       <Grid2 container spacing={2.5} justifyContent={"flex-start"}>
-        {contactInfo.map((contact, index) => (
+        {contactInfo.map((contact, index) => {
+          const [iconSrc, setIconSrc] = useState(contact.icon);
+          return (
           <Grid2 key={index}>
             <Button
               variant="contained"
               disableElevation
               onClick={() => handleClick(contact.link)}
+              onMouseEnter={() => setIconSrc(contact.hoverIcon)}  // On hover, set to hover icon
+              onMouseLeave={() => setIconSrc(contact.icon)}        // On hover out, revert to default icon
               sx={{
                 display: "flex",
                 bgcolor: "background.paper", 
@@ -81,12 +88,48 @@ const HeroButtons = () => {
                 justifyContent: "flex-start",
                 gap: 1,
               }}
-            >
-              <img src={contact.icon} alt={`${contact.name} icon`} width={24} height={24} />
+            > 
+              <Box
+                sx={{
+                  position: "relative", // Stack the images on top of each other
+                  width: 24,
+                  height: 24,
+                  overflow: "hidden",
+                }}
+              >
+                {/* Default Image */}
+                <img
+                  src={contact.icon}
+                  alt={`${contact.name} icon`}
+                  width={24}
+                  height={24}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    transition: "opacity 0.5s ease", // Smooth transition for opacity
+                    opacity: iconSrc === contact.icon ? 1 : 0, // Hide on hover
+                  }}
+                />
+                {/* Hover Image */}
+                <img
+                  src={contact.hoverIcon}
+                  alt={`${contact.name} hover icon`}
+                  width={24}
+                  height={24}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    transition: "opacity 0.5s ease", // Smooth transition for opacity
+                    opacity: iconSrc === contact.icon ? 0 : 1, // Show on hover
+                  }}
+                />
+              </Box>
               <Typography>{contact.name}</Typography>
             </Button>
           </Grid2>
-        ))}
+        )})}
       </Grid2>
     </Box>
   )
@@ -128,7 +171,6 @@ const HeroComponentCenter = () => {
         <HeroButtons />
         <ArrowIcon />
       </Container>
-      {/* <ArrowIcon /> */}
     </Grid2>
   );
 };

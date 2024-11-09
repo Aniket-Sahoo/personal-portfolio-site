@@ -25,22 +25,26 @@
     {
       "name": "Github",
       "link": "https://github.com/Aniket-Sahoo",
-      "icon": "assets/contactLogos/GithubLogo.svg"
+      "icon": "assets/contactLogos/GithubLogo.svg",
+      "hoverIcon": "assets/contactLogos/GithubHover.svg"
     },
     {
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/in/sahoo-aniket/",
-      "icon": "assets/contactLogos/LinkedInLogo.svg"
+      "icon": "assets/contactLogos/LinkedInLogo.svg",
+      "hoverIcon": "assets/contactLogos/LinkedInHover.svg"
     },
     {
       "name": "Email",
       "link": "mailto:aniketsahoo379@gmail.com",
-      "icon": "assets/contactLogos/GmailLogo.svg"
+      "icon": "assets/contactLogos/GmailLogo.svg",
+      "hoverIcon": "assets/contactLogos/GmailHover.svg"
     },
     {
       "name": "Resume",
       "link": "assets/Resume.pdf",
-      "icon": "assets/contactLogos/ResumeLogo.svg"
+      "icon": "assets/contactLogos/ResumeLogo.svg",
+      "hoverIcon": "assets/contactLogos/ResumeHover.svg"
     }
   ]
 }
