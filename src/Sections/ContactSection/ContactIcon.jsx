@@ -12,15 +12,15 @@ const ContactIcon = ({contact}) => {
     setIsHovered(false);
   };
 
-  const handleClick = () => {
-    // Track custom event when the link is clicked
-    Analytics.event('link_click', { label: contact.name });
-  };
+  // const handleClick = () => {
+  //   // Track custom event when the link is clicked
+  //   Analytics.event('link_click', { label: contact.name });
+  // };
 
   return (
     <Tooltip title={contact.name} placement="top" arrow>
       <Link href={contact.link} target="_blank" rel="noopener noreferrer">
-        <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
+        <IconButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Box
             sx={{
               position: 'relative',
