@@ -28,7 +28,7 @@ const HeroText = () => {
         </Typography>
         <Typography 
           variant="h1"
-          fontSize={{xs: "3rem", sm: "3.5rem", md: "4rem", lg: "5rem"}}
+          fontSize={{xs: "3rem", sm: "3.5rem", md: "4.2rem", lg: "5rem"}}
           sx={{
             background: theme.palette.gradientBackground.primary,
             WebkitBackgroundClip: 'text',
@@ -69,7 +69,7 @@ const HeroButtons = () => {
 
   return(
     <Box py={6}>
-      <Grid2 container spacing={2.5} justifyContent={"flex-start"}>
+      <Grid2 container spacing={{xs: 1, sm: 1.5, md: 2, lg: 2.5}} justifyContent={"flex-start"}>
         {contactInfo.map((contact, index) => {
           const [iconSrc, setIconSrc] = useState(contact.icon);
           return (
@@ -81,7 +81,7 @@ const HeroButtons = () => {
               onMouseEnter={() => setIconSrc(contact.hoverIcon)}  // On hover, set to hover icon
               onMouseLeave={() => setIconSrc(contact.icon)}        // On hover out, revert to default icon
               sx={{
-                display: "flex",
+                display: { xs: index < 3 ? "flex" : "none", sm: "flex" },  // Show only first 3 on xs
                 bgcolor: "background.paper", 
                 color: "text.primary",
                 alignItems: "center",
@@ -89,7 +89,7 @@ const HeroButtons = () => {
                 gap: 1,
               }}
             > 
-              <Box
+              <Box  
                 sx={{
                   position: "relative", // Stack the images on top of each other
                   width: 24,
@@ -126,7 +126,7 @@ const HeroButtons = () => {
                   }}
                 />
               </Box>
-              <Typography>{contact.name}</Typography>
+              <Typography fontSize={{xs: "0.9rem", lg: "1rem"}}>{contact.name}</Typography>
             </Button>
           </Grid2>
         )})}
@@ -163,7 +163,7 @@ const HeroComponentCenter = () => {
       <Container 
         sx={{
           position: "relative",
-          px:{xs: "1rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "9rem", xxl: "12rem"}, 
+          px:{xs: "1.5rem", sm: "2rem", md: "4.5rem", lg: "6rem", xl: "9rem", xxl: "12rem"}, 
           py: {xs: "9rem", sm: "9rem"}, 
         }}
         >
