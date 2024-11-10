@@ -7,15 +7,14 @@ import ContactSection from './Sections/ContactSection/ContactSection'
 import { CssBaseline, Grid2, ThemeProvider } from '@mui/material'
 import FooterComponent from './Footer/FooterComponent'
 import HeroComponent from './HeroComponent/HeroComponent'
-import { lightTheme, darkTheme, darkTheme2 } from './Themes/customThemes';
-import { clarity } from 'clarity-js';
-// import './App.css'
+import { darkTheme } from './Themes/customThemes';
+import Clarity from '@microsoft/clarity';
 
 const App = () => {
-
+  const clarityProjectId = import.meta.env.VITE_CLARITY_PROJECT_ID;
   useEffect(() => {
-    if (import.meta.env.VITE_CLARITY_PROJECT_ID) {
-      clarity.start(import.meta.env.VITE_CLARITY_PROJECT_ID);
+    if (clarityProjectId) {
+      Clarity.init(clarityProjectId);
     }
   }, []);
 
