@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import NavBar3 from './NavBar/NavBar3'
 import AboutSection from './Sections/AboutSection/AboutSection'
 import ProjectsSection from './Sections/ProjectsSection/ProjectsSection'
@@ -8,9 +8,17 @@ import { CssBaseline, Grid2, ThemeProvider } from '@mui/material'
 import FooterComponent from './Footer/FooterComponent'
 import HeroComponent from './HeroComponent/HeroComponent'
 import { lightTheme, darkTheme, darkTheme2 } from './Themes/customThemes';
+import { clarity } from 'clarity-js';
 // import './App.css'
 
 const App = () => {
+
+  useEffect(() => {
+    if (import.meta.env.VITE_CLARITY_PROJECT_ID) {
+      clarity.start(import.meta.env.VITE_CLARITY_PROJECT_ID);
+    }
+  }, []);
+
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
