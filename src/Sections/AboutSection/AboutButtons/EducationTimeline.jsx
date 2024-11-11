@@ -10,7 +10,6 @@ const EducationTimeline = () => {
   // let icons = [<WorkIcon />, <WorkIcon />, <WorkIcon />, <WorkIcon />];
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.only('xs'));
-  const educationSubtitleSmall = "B.Eng in C.S.";
   console.log(theme);
   console.log(isSmallScreen);
   return (
@@ -27,7 +26,7 @@ const EducationTimeline = () => {
               icon= {<SchoolIcon/>}
             >
               <Typography variant="h3" pb={1} className="vertical-timeline-element-title">
-                {isSmallScreen? educationSubtitleSmall:education.title}
+                {isSmallScreen? education.titleSmall:education.title}
               </Typography>
               <Typography variant="h4" className="vertical-timeline-element-subtitle">
                 {education.subtitle}
