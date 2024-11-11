@@ -1,5 +1,6 @@
 import Typography from '@mui/material/Typography';
 import { Grid2, Button, Box } from '@mui/material';
+import { alpha, lighten } from "@mui/material/styles";
 
 const ProjectTags = ({projectTags}) => {
   return (
@@ -7,9 +8,24 @@ const ProjectTags = ({projectTags}) => {
       {
         projectTags.map((tag, index) => {
           return (
-            <Button variant="outlined" size='small' sx={{color: tag.color, borderColor: tag.color, filter: "brightness(100%)"}} p={0.75} key={index}>
-              {tag.name}
-            </Button>
+            <Box 
+              px={0.75} 
+              py={0.1}
+              key={index} 
+              sx={{
+                background: alpha(tag.color, 0.2), 
+                // color: tag.color, 
+                borderRadius: 2,
+                borderColor: tag.color, 
+              }} 
+            >
+              <Typography 
+                variant="p" fontSize={"0.82rem"} fontWeight={505}
+                sx={{ color: lighten(tag.color, 0.1) }}
+              >
+                {tag.name}
+              </Typography>
+            </Box>
           )
         })
       }
