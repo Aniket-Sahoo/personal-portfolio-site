@@ -5,7 +5,7 @@ import heroContent from '../Data/heroContent.json';
 import { useTheme, useMediaQuery } from '@mui/material';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { keyframes } from '@mui/system';
-import Clarity from '@microsoft/clarity';
+import clarity from '@microsoft/clarity';
 
 
 const bounceAnimation = keyframes`
@@ -66,7 +66,7 @@ const HeroButtons = () => {
 
   const handleClick = (contact) => {
     window.open(contact.link, "_blank", "noopener,noreferrer");
-    Clarity.event(`Hero contact info click`, {label: contact.name});
+    clarity.event({action: "link-click", section: "hero", label: contact.name});
   }
 
 
