@@ -89,6 +89,7 @@ const HeroButtons = () => {
                 alignItems: "center",
                 justifyContent: "flex-start",
                 gap: 1,
+                px: {xs:1.5, sm:2},
               }}
             > 
               <Box  
@@ -146,7 +147,7 @@ const ArrowIcon = () => {
       right={0} // Set right to 0 to take the full width
       display="flex" // Use flexbox to center the icon
       justifyContent="center"  // Center horizontally
-      pb={{xs: 10, sm: 8, md: 6, lg: 4, xxl: 4}}
+      pb={{xs: 14, sm: 10, md: 7, lg: 4, xxl: 4}}
     >
       <ArrowDownwardIcon 
         fontSize="large" 
@@ -159,7 +160,7 @@ const ArrowIcon = () => {
   )
 }
 
-const HeroComponentCenter = () => {
+const HeroComponent = () => {
   return (
     <Grid2 container direction={"column"} height={"100vh"} alignItems={"center"} justifyContent={"center"}>
       <Container 
@@ -177,4 +178,4 @@ const HeroComponentCenter = () => {
   );
 };
 
-export default HeroComponentCenter;
+export default HeroComponent;
