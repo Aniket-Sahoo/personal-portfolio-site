@@ -5,6 +5,8 @@ import heroContent from '../Data/heroContent.json';
 import { useTheme, useMediaQuery } from '@mui/material';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { keyframes } from '@mui/system';
+import clarity from '@microsoft/clarity';
+
 
 const bounceAnimation = keyframes`
   0%, 100% {
@@ -62,10 +64,10 @@ const HeroButtons = () => {
 
   const contactInfo = heroContent.contactInfo;
 
-  const handleClick = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
+  const handleClick = (contact) => {
+    window.open(contact.link, "_blank", "noopener,noreferrer");
+    clarity.event(`hero_contact_click: ${contact.name}`);
   }
-
 
   return(
     <Box py={6}>
@@ -77,7 +79,7 @@ const HeroButtons = () => {
             <Button
               variant="contained"
               disableElevation
-              onClick={() => handleClick(contact.link)}
+              onClick={() => handleClick(contact)}
               onMouseEnter={() => setIconSrc(contact.hoverIcon)}  // On hover, set to hover icon
               onMouseLeave={() => setIconSrc(contact.icon)}        // On hover out, revert to default icon
               sx={{
