@@ -35,16 +35,16 @@
       "hoverIcon": "assets/contactLogos/LinkedInHover.svg"
     },
     {
-      "name": "Email",
-      "link": "mailto:aniketsahoo379@gmail.com",
-      "icon": "assets/contactLogos/GmailLogo.svg",
-      "hoverIcon": "assets/contactLogos/GmailHover.svg"
-    },
-    {
       "name": "Resume",
       "link": "assets/Resume.pdf",
       "icon": "assets/contactLogos/ResumeLogo.svg",
       "hoverIcon": "assets/contactLogos/ResumeHover.svg"
+    },
+    {
+      "name": "Email",
+      "link": "mailto:aniketsahoo379@gmail.com",
+      "icon": "assets/contactLogos/GmailLogo.svg",
+      "hoverIcon": "assets/contactLogos/GmailHover.svg"
     }
   ]
 }
