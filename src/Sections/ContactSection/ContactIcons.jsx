@@ -6,6 +6,7 @@ import ContactIcon from "./ContactIcon";
 
 
 const ContactIcons = ({contactInfo}) => {
+
   return (
     <Grid2 container p={2} justifyContent={"center"} spacing={2}>
       {
