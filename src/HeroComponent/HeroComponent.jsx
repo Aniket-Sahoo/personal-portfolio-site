@@ -66,9 +66,8 @@ const HeroButtons = () => {
 
   const handleClick = (contact) => {
     window.open(contact.link, "_blank", "noopener,noreferrer");
-    clarity.event("button_click", { buttonId: "contact-Button", buttonText: contact.name });
+    clarity.event(`hero_contact_click: ${contact.name}`);
   }
-
 
   return(
     <Box py={6}>
