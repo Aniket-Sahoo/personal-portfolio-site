@@ -147,7 +147,7 @@ const ArrowIcon = () => {
       right={0} // Set right to 0 to take the full width
       display="flex" // Use flexbox to center the icon
       justifyContent="center"  // Center horizontally
-      pb={{xs: 14, sm: 10, md: 7, lg: 4, xxl: 4}}
+      pb={{xs: 11, sm: 8, md: 6, lg: 4, xxl: 4}}
     >
       <ArrowDownwardIcon 
         fontSize="large" 
