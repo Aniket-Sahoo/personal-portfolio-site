@@ -129,7 +129,7 @@ const HeroButtons = () => {
                   }}
                 />
               </Box>
-              <Typography fontSize={{xs: "0.9rem", lg: "1rem"}}>{contact.name}</Typography>
+              <Typography fontSize={{xs: "0.8rem", lg: "0.9rem"}}>{contact.name}</Typography>
             </Button>
           </Grid2>
         )})}
