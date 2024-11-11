@@ -66,7 +66,7 @@ const HeroButtons = () => {
 
   const handleClick = (contact) => {
     window.open(contact.link, "_blank", "noopener,noreferrer");
-    clarity.event({action: "link-click", section: "hero", label: contact.name});
+    clarity.event("button_click", { buttonId: "contact-Button", buttonText: contact.name });
   }
 
 
