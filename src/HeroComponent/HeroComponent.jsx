@@ -141,12 +141,12 @@ const ArrowIcon = () => {
   return (
     <Grid2 
       position="absolute" 
-      bottom={0} 
+      bottom={10} 
       left={0}  // Set left to 0 so it takes the full width
       right={0} // Set right to 0 to take the full width
       display="flex" // Use flexbox to center the icon
       justifyContent="center"  // Center horizontally
-      pb={3}
+      pb={{xs: 10, sm: 8, md: 6, lg: 4, xxl: 4}}
     >
       <ArrowDownwardIcon 
         fontSize="large" 
