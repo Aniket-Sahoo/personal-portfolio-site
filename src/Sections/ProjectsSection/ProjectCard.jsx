@@ -15,11 +15,18 @@ const LinkButtons = ({links}) => {
             <Link 
               href={link.link} 
               target="_blank" rel="noopener noreferrer" 
-              sx={{ textDecoration: "none", color: "inherit"}}>
+              sx={{ textDecoration: "none"}}>
               <Box
                 component="img"
+                color={link.color}
                 src={link.icon}
-                sx={{ width: 25, height: 25 }}
+                sx={{ 
+                  width: 25, 
+                  height: 25,
+                  filter: 'invert(0.9) brightness(90%)',
+                }}
+                alt={link.name}
+                
               />
             </Link>
           </Grid2>
@@ -35,7 +42,7 @@ const ProjectCard = ({project}) => {
   return (
     <Grid2 
       size={{xs: 12, sm: 6, md: 6, lg: 4}} 
-      sx={{borderRadius: 5, bgcolor: '#a1887f', background: theme.palette.gradientBackground.card}}
+      sx={{borderRadius: 5, boxShadow:4 ,background: theme.palette.gradientBackground.card}}
     >
       <Grid2 px={2} pt={2} flex={1}>
         <CardMedia 
