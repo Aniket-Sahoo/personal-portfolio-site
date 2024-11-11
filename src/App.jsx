@@ -19,6 +19,7 @@ const getClarityProjectId = async () => {
     // Fetch from serverless function for staging/production
     const res = await fetch('/api/getClarityProjectId');
     const data = await res.json();
+    console.log("projectId fetched: ", data);
     return data.projectId;
   }
 };
@@ -41,6 +42,9 @@ const App = () => {
     if (clarityProjectId) {
       Clarity.init(clarityProjectId);
       console.log("Clarity initialized");
+    }
+    else{
+      console.log("Clarity not initialized");
     }
   }, [clarityProjectId]);
 
