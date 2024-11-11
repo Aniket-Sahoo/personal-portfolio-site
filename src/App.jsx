@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import NavBar3 from './NavBar/NavBar3'
 import AboutSection from './Sections/AboutSection/AboutSection'
 import ProjectsSection from './Sections/ProjectsSection/ProjectsSection'
@@ -10,13 +10,39 @@ import HeroComponent from './HeroComponent/HeroComponent'
 import { darkTheme } from './Themes/customThemes';
 import Clarity from '@microsoft/clarity';
 
+
+const getClarityProjectId = async () => {
+  if (import.meta.env.MODE === 'development') {
+    // Use local environment variable for development
+    return import.meta.env.VITE_CLARITY_PROJECT_ID;
+  } else {
+    // Fetch from serverless function for staging/production
+    const res = await fetch('/api/getClarityProjectId');
+    const data = await res.json();
+    return data.projectId;
+  }
+};
+
+
 const App = () => {
-  const clarityProjectId = import.meta.env.VITE_CLARITY_PROJECT_ID;
+
+  const [clarityProjectId, setClarityProjectId] = useState(null);
+
+  useEffect(() => {
+    const fetchProjectId = async () => {
+      const projectId = await getClarityProjectId();
+      setClarityProjectId(projectId);
+    };
+    
+    fetchProjectId();
+  }, []);
+
   useEffect(() => {
     if (clarityProjectId) {
       Clarity.init(clarityProjectId);
+      console.log("Clarity initialized");
     }
-  }, []);
+  }, [clarityProjectId]);
 
   return (
     <ThemeProvider theme={darkTheme}>
