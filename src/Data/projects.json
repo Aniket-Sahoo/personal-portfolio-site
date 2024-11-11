@@ -5,9 +5,9 @@
     "image": "assets/projectImages/TempPortfolioProjectImage.png",
     "links":[
       { 
-        "name": "Github", 
-        "link": "https://github.com/Aniket-Sahoo/personal-portfolio-site", 
-        "icon": "assets/contactLogos/GithubLogo.svg" 
+        "name": "View Project", 
+        "link": "https://docs.google.com/document/d/1o6Yy4Y-Gx3NVlAzhE-u5UdASzFzjJx5sU4JdGIt-cz4/edit?usp=sharing", 
+        "icon": "assets/contactLogos/OpenNewTabLogo.svg" 
       }
     ],
     "tags": [                                                                             
@@ -24,9 +24,9 @@
     "image": "assets/projectImages/MLProjectImage2.png",
     "links":[
       { 
-        "name": "Github", 
-        "link": "https://github.com/Aniket-Sahoo/Predicting_Used_Car_Prices", 
-        "icon": "assets/contactLogos/GithubLogo.svg" 
+        "name": "View Project", 
+        "link": "https://docs.google.com/document/d/1o6Yy4Y-Gx3NVlAzhE-u5UdASzFzjJx5sU4JdGIt-cz4/edit?usp=sharing", 
+        "icon": "assets/contactLogos/OpenNewTabLogo.svg" 
       }
     ],
     "tags": [
@@ -41,9 +41,9 @@
     "image": "assets/projectImages/CandleStickImage.png",
     "links":[
       { 
-        "name": "Github", 
-        "link": "https://github.com/Aniket-Sahoo", 
-        "icon": "assets/contactLogos/GithubLogo.svg" 
+        "name": "View Project", 
+        "link": "https://docs.google.com/document/d/1o6Yy4Y-Gx3NVlAzhE-u5UdASzFzjJx5sU4JdGIt-cz4/edit?usp=sharing", 
+        "icon": "assets/contactLogos/OpenNewTabLogo.svg" 
       }
     ],
     "tags": [
