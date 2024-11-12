@@ -44,7 +44,7 @@ const AboutButtons = () => {
 
   return (
     <Box>
-      <Grid2 container py={4} pb={8} justifyContent={"center"} spacing={{ xs: 1, sm: 3, md: 5 }}>
+      <Grid2 container pt={4} pb={4} justifyContent={"center"} spacing={{ xs: 1, sm: 3, md: 5 }}>
         <Button 
           variant={state.work ? "contained" : "outlined"}
           color= {state.work ? 'brown' : "hazel"}
