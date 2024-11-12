@@ -1,5 +1,16 @@
 [
   {
+    "title": "Return-Orders Plan Evaluation",
+    "description": "Worked on developing the Plan Evaluation API that filters the return plans shown to Amazon customers based on different attributes.",
+    "image": "assets/projectImages/AmazonProjectImageLight2.jpg",
+    "links":[],
+    "tags": [                                                                             
+      { "name": "Java", "color": "#007FFF" },
+      { "name": "Spring", "color": "#6DB33F" },
+      { "name": "Python", "color": "#247BA0" }
+    ]
+  },
+  {
     "title": "Personal Portfolio Site",
     "description": "Created this site to display my projects and showcase my skills. Dive into my projects and discover who I am as a developer.",
     "image": "assets/projectImages/TempPortfolioProjectImage.png",
@@ -30,9 +41,21 @@
       }
     ],
     "tags": [
-      { "name": "Python", "color": "#3776AB" },
+      { "name": "Python", "color": "#247BA0" },
       { "name": "Machine Learning", "color": "#E37F26" },
       { "name": "Pandas", "color": "#A499BE" }
+    ]
+  },
+  {
+    "title": "Web Scraping Tool",
+    "description": "Developed a web scraping tool to automate extraction of data from LinkedIn and store it in CSV files.",
+    "image": "assets/projectImages/WebscrapingImage2.png",
+    "links":[
+    ],
+    "tags": [
+      { "name": "Python", "color": "#247BA0" },
+      { "name": "Beautiful Soup", "color": "#E2E8F0" },
+      { "name": "Selenium", "color": "#43B02A" }
     ]
   },
   {

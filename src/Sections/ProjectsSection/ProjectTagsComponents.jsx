@@ -20,7 +20,7 @@ const ProjectTags = ({projectTags}) => {
               }} 
             >
               <Typography 
-                variant="p" fontSize={"0.82rem"} fontWeight={505}
+                variant="p" fontSize={"0.82rem"} fontWeight={500}
                 sx={{ color: lighten(tag.color, 0.1) }}
               >
                 {tag.name}
