@@ -22,19 +22,12 @@ const HobbiesComponent = () => {
         {hobbies.map((hobby, index) => (
         // <AnimatePresence>
           (expandedIndex === null || expandedIndex === index) && (
-            <motion.div
-              initial={{ opacity: 1, x: 0 }} // Starting state
-              animate={{ opacity: 1, x: "0%" }} // Animate to this state
-              exit={{ opacity: 0, x: -20 }} // Exit state
-              transition={{ duration: 10 }} // Duration of transition
-            >
               <HobbiesIcon
-                // key={index}
+                key={index}
                 hobby={hobby}
                 isExpanded={expandedIndex === index}
                 onExpand={() => handleExpand(index)}
               />
-            </motion.div>
           )
         // </AnimatePresence>
         ))}
@@ -44,8 +37,12 @@ const HobbiesComponent = () => {
 };
 
 const HobbiesIcon = ({ hobby, isExpanded, onExpand }) => {
+  const msg = "Click on box to go back";
   return (
-    <Tooltip title={hobby.name} placement="top" arrow>
+    <Tooltip 
+      title = {isExpanded ? msg : hobby.name}
+      placement="top" arrow
+    >
       <motion.div
         onClick={onExpand}
         style={{
@@ -98,13 +95,13 @@ const HobbiesIcon = ({ hobby, isExpanded, onExpand }) => {
             animate={{
               opacity: 1, // Fade-in the text when expanded
             }}
-            transition={{ duration: 0.5, delay: 0.3 }} // Delay for smooth appearance
+            transition={{ duration: 0.4, delay: 0.2 }} // Delay for smooth appearance
           >
             <Typography
               variant="body1"
               sx={{
                 color: "#ffffff",
-                fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem" },
+                fontSize: { xs: "0.8rem", sm: "1rem" },
               }}
             >
               {hobby.description}
