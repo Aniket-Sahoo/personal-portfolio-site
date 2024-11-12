@@ -139,6 +139,14 @@ const HeroButtons = () => {
 }
 
 const ArrowIcon = () => {
+
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <Grid2 
       position="absolute" 
@@ -153,8 +161,10 @@ const ArrowIcon = () => {
         fontSize="large" 
         sx={{
           color: "text.secondary",
+          cursor: "pointer", // Make it clickable
           animation: `${bounceAnimation} 2s ease-in-out infinite` 
         }}
+        onClick={handleScrollDown}
       />
     </Grid2>
   )
